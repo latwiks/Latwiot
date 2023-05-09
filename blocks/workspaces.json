@@ -1,0 +1,4842 @@
+{
+  "info": {
+    "title": "Play command for the DBB Discord server",
+    "description": "by shenzy#4415 (827871760656367636)\n\n<yourprefix>play <song name>\n<yourprefix>queue",
+    "thumbnail": "https://media.giphy.com/media/blSTtZehjAZ8I/giphy.gif"
+  },
+  "blocks": [
+    {
+      "name": "command_event_with_text",
+      "info": {
+        "x": 8,
+        "y": 40,
+        "z": 1,
+        "color": "#5a5a5a",
+        "height": 585,
+        "width": 774
+      },
+      "inputs": {
+        "command_slowmode": "mse4DyR2DR"
+      },
+      "options": {
+        "command_name": "play",
+        "custom_prefix": "",
+        "command_restriction": "none",
+        "required_member_permission": "none",
+        "case_sensitive": "no",
+        "command_slowmode_restriction": "none"
+      },
+      "outputs": {
+        "action1": [
+          "eEyqqXOC2g"
+        ],
+        "action2": [],
+        "message": [
+          "WM6byVxITr",
+          "DXtpnR8WMH",
+          "2XfZMaytQ0",
+          "974lupWMcz",
+          "doa8exZWCh"
+        ],
+        "server": [
+          "EPiowr0hA3",
+          "ZMMkXNgp2d",
+          "amqeh5LKib",
+          "JuvSS279KB",
+          "SxzQ8tVtQ2",
+          "aTfne4NlVI",
+          "Qx8dBQzmpu",
+          "zsiQLHlB7t",
+          "TytJ3KDSzz",
+          "JaRK5b5oSj",
+          "rK5WJpbpMl",
+          "jP46qbREZV",
+          "yWP4qOfl9k",
+          "O78GB2OuHo"
+        ],
+        "channel": [
+          "edGGHH7cHR",
+          "VS4DNMIz2j",
+          "9imqn8NQXW"
+        ],
+        "vc": [
+          "E67lKpPkDu",
+          "baHB8WvDc9",
+          "nyN8EwFCSN"
+        ],
+        "user": [
+          "t4jOQtZmDG"
+        ],
+        "member": [],
+        "error_message": []
+      }
+    },
+    {
+      "name": "check_if_value_exists",
+      "info": {
+        "x": 1046,
+        "y": 261,
+        "z": 2,
+        "color": "#5a5a5a",
+        "height": 205,
+        "width": 296
+      },
+      "inputs": {
+        "action": "eEyqqXOC2g",
+        "value": "E67lKpPkDu"
+      },
+      "outputs": {
+        "action1": [
+          "zf69zk9BWc"
+        ],
+        "action2": [
+          "xmWfZLnYSp"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "join_voice_channel",
+      "info": {
+        "x": 1512,
+        "y": 277,
+        "z": 4,
+        "color": "#5a5a5a",
+        "height": 206,
+        "width": 350
+      },
+      "inputs": {
+        "action": "zf69zk9BWc",
+        "voice_channel": "baHB8WvDc9"
+      },
+      "outputs": {
+        "action": [
+          "Dz413Xm7tX"
+        ],
+        "voice_connection": []
+      },
+      "options": {}
+    },
+    {
+      "name": "get_message_arguments",
+      "info": {
+        "x": 1903,
+        "y": 223,
+        "z": 5,
+        "color": "#5a5a5a",
+        "height": 362,
+        "width": 496
+      },
+      "inputs": {
+        "action": "Dz413Xm7tX",
+        "message": "WM6byVxITr",
+        "argument_number": "gjUpkOkHWd",
+        "custom_argument_separator": "UIlH19GkjR"
+      },
+      "options": {
+        "argument_type": "multiple_arguments"
+      },
+      "outputs": {
+        "action": [
+          "QkLuZdakkA"
+        ],
+        "result": [
+          "0B9dzrgqa5",
+          "vtedGseHv3",
+          "Q5ShmgCE5R"
+        ]
+      }
+    },
+    {
+      "name": "play_music",
+      "info": {
+        "x": 2444,
+        "y": 136,
+        "z": 6,
+        "color": "#5a5a5a",
+        "height": 501,
+        "width": 610
+      },
+      "inputs": {
+        "action": "EBRijU6wTs",
+        "server": "EPiowr0hA3",
+        "url": "0B9dzrgqa5",
+        "seek": "lCYECrUqjs",
+        "volume": "Ou5BzQLB89",
+        "bitrate": "GdSq5vkvx4",
+        "custom_position": "GxHOIVT3U4"
+      },
+      "options": {
+        "audio_behavior_type": "add_last",
+        "audio_quality_type": "highestaudio"
+      },
+      "outputs": {
+        "action": [
+          "bictOcyatg"
+        ],
+        "id": [],
+        "url": [
+          "xXot0dU2pd",
+          "CN2t94sPXA",
+          "XTPf3r6IQN",
+          "qstLnT979I",
+          "4VtYDRSlgG"
+        ]
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3232,
+        "y": 281,
+        "z": 7,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "bictOcyatg",
+        "search_value": "xXot0dU2pd",
+        "result_number": "85plQlarbn"
+      },
+      "options": {
+        "video_info": "6"
+      },
+      "outputs": {
+        "action": [
+          "eaULklUwGC"
+        ],
+        "result": [
+          "aO9i6btNp7",
+          "NQyjIBWGXq"
+        ]
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3237,
+        "y": 551,
+        "z": 12,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "eaULklUwGC",
+        "search_value": "CN2t94sPXA",
+        "result_number": "764W4ylNPY"
+      },
+      "options": {
+        "video_info": "1"
+      },
+      "outputs": {
+        "action": [
+          "KxDIIy3QpZ"
+        ],
+        "result": [
+          "PM74IBWagr",
+          "pbsaBEjWsD",
+          "6vZ782Ciib",
+          "nHsID6OCr9",
+          "GnetFvacd1"
+        ]
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3235,
+        "y": 804,
+        "z": 14,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "KxDIIy3QpZ",
+        "search_value": "XTPf3r6IQN",
+        "result_number": "mrRXtDKp2z"
+      },
+      "options": {
+        "video_info": "3"
+      },
+      "outputs": {
+        "action": [
+          "JKPakvo7nZ"
+        ],
+        "result": [
+          "FfAciwXUok",
+          "OnBFUJaDgJ",
+          "x92XHIY2rV"
+        ]
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3230,
+        "y": 1067,
+        "z": 15,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "JKPakvo7nZ",
+        "search_value": "qstLnT979I",
+        "result_number": "kJSA0ioahF"
+      },
+      "options": {
+        "video_info": "5"
+      },
+      "outputs": {
+        "action": [
+          "oaBRltI0vb"
+        ],
+        "result": [
+          "AG3kpsky5S",
+          "GTdNIVzY9S",
+          "Fad1xCkoUG"
+        ]
+      }
+    },
+    {
+      "name": "multi_embed_tool",
+      "info": {
+        "x": 3902,
+        "y": 288,
+        "z": 16,
+        "color": "#5a5a5a",
+        "height": 1227,
+        "width": 568
+      },
+      "inputs": {
+        "action": "qfff0OwfAw",
+        "text1": "aO9i6btNp7",
+        "text2": "PM74IBWagr",
+        "text3": "FfAciwXUok",
+        "text4": "AG3kpsky5S",
+        "text5": "70cipOc8g3",
+        "text6": "bKFhNtIfRD"
+      },
+      "options": {
+        "color": "#0080ff",
+        "mergedtext1": "",
+        "mergedtext2": "",
+        "mergedtext3": "",
+        "mergedtext4": "",
+        "mergedtext5": "💿Spielt grade",
+        "mergedtext6": "",
+        "mergedtext7": "📃Song:\n${text2}\n\n⏲️Dauer:\n${text3}\n\n👀Views:\n${text4}\n\n🧑Author:\n${text5}\n\n🔊Lautstärke:\n`${text6}%`",
+        "mergedtext8": "${text1}",
+        "mergedtext9": "",
+        "mergedtext10": "",
+        "boolean_type": "true"
+      },
+      "outputs": {
+        "action": [
+          "g0BZubItOI"
+        ],
+        "color": [
+          "2pTtycM6Vu"
+        ],
+        "mergedtext1": [],
+        "mergedtext2": [],
+        "mergedtext3": [],
+        "mergedtext4": [],
+        "mergedtext5": [
+          "MSwCU1Iwxm"
+        ],
+        "mergedtext6": [],
+        "mergedtext7": [
+          "JVCGltLe3W"
+        ],
+        "mergedtext8": [
+          "v6UllzQBWk"
+        ],
+        "mergedtext9": [],
+        "mergedtext10": [],
+        "boolean": [
+          "YxWaSg79iu"
+        ]
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3234,
+        "y": 1322,
+        "z": 17,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "oaBRltI0vb",
+        "search_value": "4VtYDRSlgG",
+        "result_number": "LzzUFdoQQk"
+      },
+      "options": {
+        "video_info": "9"
+      },
+      "outputs": {
+        "action": [
+          "K3ELjnUKHi"
+        ],
+        "result": [
+          "70cipOc8g3",
+          "QjOrWfNiPa",
+          "1eM0M6GOV4"
+        ]
+      }
+    },
+    {
+      "name": "create_embed_message",
+      "info": {
+        "x": 4482,
+        "y": 568,
+        "z": 18,
+        "color": "#5a5a5a",
+        "height": 912,
+        "width": 350
+      },
+      "inputs": {
+        "action": "g0BZubItOI",
+        "color": "2pTtycM6Vu",
+        "thumbnail": "l4jV8DIKlW",
+        "author_icon": "MplcQ5iYdD",
+        "author_name": "8F2mVSKoJq",
+        "author_url": "Gfs53D2pok",
+        "title": "MSwCU1Iwxm",
+        "url": "l3r9Mx8oZd",
+        "description": "JVCGltLe3W",
+        "image": "v6UllzQBWk",
+        "footer_icon": "88LF31MZYY",
+        "footer_text": "ySi9tUneih",
+        "timestamp": "YxWaSg79iu"
+      },
+      "outputs": {
+        "action": [
+          "6npZglWfbC"
+        ],
+        "message_embed": [
+          "dh5Xom2szx",
+          "6D9rQxU2l3",
+          "TZP79ougfZ",
+          "yootTLuPgM"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "Better_send_messagev2",
+      "info": {
+        "x": 511,
+        "y": 812,
+        "z": 20,
+        "color": "#5a5a5a",
+        "height": 600,
+        "width": 539
+      },
+      "inputs": {
+        "action": "xmWfZLnYSp",
+        "channel": "edGGHH7cHR",
+        "embed": "xA4obkULMZ",
+        "buttons": "w25aW65xo3",
+        "attachment": "fW55OpqxwD",
+        "text1": "7BC6D3RYez",
+        "text2": "sAnmXRFc53",
+        "text3": "oTS3jBYGN2",
+        "text4": "qixxEr7XZl"
+      },
+      "options": {
+        "TTS": "false",
+        "smsg": "false",
+        "text": "du bist in keinem vc!"
+      },
+      "outputs": {
+        "action": [
+          "8rx5L6xQ2B"
+        ],
+        "message": [
+          "LX4udMbS4s"
+        ]
+      }
+    },
+    {
+      "name": "create_button",
+      "info": {
+        "x": 6110,
+        "y": 1344,
+        "z": 55,
+        "color": "#5a5a5a",
+        "height": 482,
+        "width": 311
+      },
+      "inputs": {
+        "action": "6npZglWfbC",
+        "setStyle": "e0nzaUEId5",
+        "setLabel": "Mnl5nA4pw8",
+        "setEmoji": "6sCJnGxycd",
+        "setURL": "j3VZX99A2q",
+        "setID": "6N0p2SMQML",
+        "setDisabled": "pVEZPkLJ3U"
+      },
+      "outputs": {
+        "action": [
+          "uBbNkeTtjR"
+        ],
+        "button": [
+          "88VqN3OAMT"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "check_if_value_exists",
+      "info": {
+        "x": 1125,
+        "y": 1005,
+        "z": 61,
+        "color": "#5a5a5a",
+        "height": 205,
+        "width": 296
+      },
+      "inputs": {
+        "action": "QkLuZdakkA",
+        "value": "vtedGseHv3"
+      },
+      "outputs": {
+        "action1": [
+          "prWuUmldY8"
+        ],
+        "action2": [
+          "Uj2xaxrPRL"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "wait",
+      "info": {
+        "x": 886,
+        "y": 2038,
+        "z": 62,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 406
+      },
+      "inputs": {
+        "action": "8rx5L6xQ2B",
+        "time": "Q7XSX35LCf"
+      },
+      "options": {
+        "time_type": "seconds"
+      },
+      "outputs": {
+        "action": [
+          "iW4YB4ZYfO"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 1650,
+        "y": 2516,
+        "z": 63,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "5"
+      },
+      "outputs": {
+        "number": [
+          "Q7XSX35LCf",
+          "ibQHsUOW9O"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "delete_message",
+      "info": {
+        "x": 892,
+        "y": 1708,
+        "z": 64,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "iW4YB4ZYfO",
+        "message": "LX4udMbS4s",
+        "timeout": "4wDxwirHL0",
+        "reason": "tI18xED9pb"
+      },
+      "outputs": {
+        "action": []
+      },
+      "options": {}
+    },
+    {
+      "name": "Better_send_messagev2",
+      "info": {
+        "x": 2274,
+        "y": 1105,
+        "z": 65,
+        "color": "#5a5a5a",
+        "height": 600,
+        "width": 539
+      },
+      "inputs": {
+        "action": "Uj2xaxrPRL",
+        "channel": "VS4DNMIz2j",
+        "embed": "I3qq8sZGbl",
+        "buttons": "dwkHQU8Hza",
+        "attachment": "nxBQ00Aygu",
+        "text1": "CmPmRnT6Vh",
+        "text2": "X6xDzPJkxO",
+        "text3": "zs45NNWCLM",
+        "text4": "iapL4edFFU"
+      },
+      "options": {
+        "TTS": "false",
+        "smsg": "false",
+        "text": "Kein song angegben!\n\n`!play <song>`"
+      },
+      "outputs": {
+        "action": [
+          "h82RISdzZK"
+        ],
+        "message": [
+          "KyaLI9acTH"
+        ]
+      }
+    },
+    {
+      "name": "wait",
+      "info": {
+        "x": 889,
+        "y": 2299,
+        "z": 66,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 406
+      },
+      "inputs": {
+        "action": "h82RISdzZK",
+        "time": "nGf90FJ4zd"
+      },
+      "options": {
+        "time_type": "seconds"
+      },
+      "outputs": {
+        "action": [
+          "blvs159OVR"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 1657,
+        "y": 2680,
+        "z": 67,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "10"
+      },
+      "outputs": {
+        "number": [
+          "nGf90FJ4zd"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "delete_message",
+      "info": {
+        "x": 906,
+        "y": 2492,
+        "z": 68,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "blvs159OVR",
+        "message": "KyaLI9acTH",
+        "timeout": "XGXEmLaijF",
+        "reason": "bFUrQZy7sI"
+      },
+      "outputs": {
+        "action": []
+      },
+      "options": {}
+    },
+    {
+      "name": "create_button",
+      "info": {
+        "x": 6469,
+        "y": 1330,
+        "z": 69,
+        "color": "#5a5a5a",
+        "height": 482,
+        "width": 311
+      },
+      "inputs": {
+        "action": "uBbNkeTtjR",
+        "setStyle": "qGsNGD7EVy",
+        "setLabel": "C1EQpVZsji",
+        "setEmoji": "gNIJYBTwnv",
+        "setURL": "gOuvmybiE4",
+        "setID": "NOjPeOkJD4",
+        "setDisabled": "gh8IDp0eCl"
+      },
+      "outputs": {
+        "action": [
+          "IL261bvNV5"
+        ],
+        "button": [
+          "eUIDq4xPds"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "button_style",
+      "info": {
+        "x": 6620,
+        "y": 1102,
+        "z": 70,
+        "color": "#5a5a5a",
+        "height": 146,
+        "width": 308
+      },
+      "options": {
+        "style": "grey"
+      },
+      "outputs": {
+        "style": [
+          "qGsNGD7EVy"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "text_3x",
+      "info": {
+        "x": 10225,
+        "y": 1160,
+        "z": 71,
+        "color": "#5a5a5a",
+        "height": 366,
+        "width": 358
+      },
+      "options": {
+        "text1": "🔉",
+        "text2": "leiser",
+        "text3": ""
+      },
+      "outputs": {
+        "text1": [
+          "C1EQpVZsji"
+        ],
+        "text2": [
+          "NOjPeOkJD4",
+          "YH3HiFTHrt"
+        ],
+        "text3": []
+      },
+      "inputs": {}
+    },
+    {
+      "name": "create_list",
+      "info": {
+        "x": 8017,
+        "y": 2082,
+        "z": 72,
+        "color": "#5a5a5a",
+        "height": 173,
+        "width": 252
+      },
+      "inputs": {
+        "action": "XKSQw9KcDf"
+      },
+      "outputs": {
+        "action": [
+          "P1bDZH1ceP"
+        ],
+        "list": [
+          "sjAm1oohed"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "add_item_to_list",
+      "info": {
+        "x": 8381,
+        "y": 2003,
+        "z": 73,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 478
+      },
+      "inputs": {
+        "action": "P1bDZH1ceP",
+        "list": "sjAm1oohed",
+        "item": "eUIDq4xPds",
+        "custom_position": "Bc40jfusVW"
+      },
+      "options": {
+        "position_type": "first"
+      },
+      "outputs": {
+        "action": [
+          "DHEQOGAxdz"
+        ],
+        "list": [
+          "miT4AnctoJ"
+        ]
+      }
+    },
+    {
+      "name": "add_item_to_list",
+      "info": {
+        "x": 8853,
+        "y": 2005,
+        "z": 74,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 478
+      },
+      "inputs": {
+        "action": "DHEQOGAxdz",
+        "list": "miT4AnctoJ",
+        "item": "88VqN3OAMT",
+        "custom_position": "si7DJyeObV"
+      },
+      "options": {
+        "position_type": "last"
+      },
+      "outputs": {
+        "action": [
+          "NBrzacmUTe"
+        ],
+        "list": [
+          "N8QHXTI5BV"
+        ]
+      }
+    },
+    {
+      "name": "create_button_row",
+      "info": {
+        "x": 10764,
+        "y": 1990,
+        "z": 75,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 294
+      },
+      "inputs": {
+        "action": "y8v75Mf13C",
+        "buttons": "KOw3SEqLZ6"
+      },
+      "outputs": {
+        "action": [
+          "f9KXdx8pg0"
+        ],
+        "buttonrow": [
+          "O8booRChVC"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "send_message_component",
+      "info": {
+        "x": 11176,
+        "y": 1774,
+        "z": 76,
+        "color": "#5a5a5a",
+        "height": 501,
+        "width": 324
+      },
+      "inputs": {
+        "action": "f9KXdx8pg0",
+        "channel": "9imqn8NQXW",
+        "text": "RiRaPcdKye",
+        "embed": "dh5Xom2szx",
+        "attachment": "eGoAbpCQi0",
+        "buttons": "O8booRChVC",
+        "split_message": "dRHsXfpBfs"
+      },
+      "outputs": {
+        "action": [
+          "A9109RhXa6"
+        ],
+        "message": [
+          "hN7m5IYH8e",
+          "jbH6bwLeBw",
+          "uZ6ktoBbSi",
+          "3OWkdU2f9S"
+        ],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "button_event",
+      "info": {
+        "x": 5906,
+        "y": 2434,
+        "z": 77,
+        "color": "#5a5a5a",
+        "height": 329,
+        "width": 311
+      },
+      "inputs": {
+        "buttonid": "YH3HiFTHrt"
+      },
+      "outputs": {
+        "action": [
+          "yDvpGLXQXZ"
+        ],
+        "user": [
+          "K4bDbli1e3"
+        ],
+        "member": [],
+        "message": [],
+        "button": [
+          "R1OHCp3jM3",
+          "PsFkHFiKiA",
+          "1a9ovs87tb"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "component_thinking",
+      "info": {
+        "x": 6336,
+        "y": 2511,
+        "z": 78,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 294
+      },
+      "inputs": {
+        "action": "yDvpGLXQXZ",
+        "component": "R1OHCp3jM3"
+      },
+      "outputs": {
+        "action": [
+          "q67k5ZAtjc"
+        ],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 12124,
+        "y": 2707,
+        "z": 82,
+        "color": "#5a5a5a",
+        "height": 402,
+        "width": 359
+      },
+      "inputs": {
+        "action": "8A9TpKneIG",
+        "message_text": "XM5gd3yh08",
+        "message_embed": "mFP9HM3wdE",
+        "components": "lzC8qW9k81",
+        "component": "PsFkHFiKiA"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "create_button",
+      "info": {
+        "x": 6835,
+        "y": 1344,
+        "z": 84,
+        "color": "#5a5a5a",
+        "height": 482,
+        "width": 311
+      },
+      "inputs": {
+        "action": "IL261bvNV5",
+        "setStyle": "ZGXESclotl",
+        "setLabel": "0wTolYJ1Oq",
+        "setEmoji": "CyuPnMfFL6",
+        "setURL": "TeRgTyV93o",
+        "setID": "sq5OGE4pa7",
+        "setDisabled": "HLowcAIbQi"
+      },
+      "outputs": {
+        "action": [
+          "YmUJwFOtKi"
+        ],
+        "button": [
+          "hjnc5B2gHf"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "button_style",
+      "info": {
+        "x": 6931,
+        "y": 1100,
+        "z": 85,
+        "color": "#5a5a5a",
+        "height": 146,
+        "width": 308
+      },
+      "options": {
+        "style": "green"
+      },
+      "outputs": {
+        "style": [
+          "ZGXESclotl"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "text_3x",
+      "info": {
+        "x": 9488,
+        "y": 1530,
+        "z": 86,
+        "color": "#5a5a5a",
+        "height": 366,
+        "width": 358
+      },
+      "options": {
+        "text1": "⏸️",
+        "text2": "LYRICS",
+        "text3": ""
+      },
+      "outputs": {
+        "text1": [
+          "0wTolYJ1Oq"
+        ],
+        "text2": [
+          "sq5OGE4pa7",
+          "8QjgvFZygn"
+        ],
+        "text3": []
+      },
+      "inputs": {}
+    },
+    {
+      "name": "add_item_to_list",
+      "info": {
+        "x": 9327,
+        "y": 2022,
+        "z": 87,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 478
+      },
+      "inputs": {
+        "action": "NBrzacmUTe",
+        "list": "N8QHXTI5BV",
+        "item": "hjnc5B2gHf",
+        "custom_position": "t12HiBaIGZ"
+      },
+      "options": {
+        "position_type": "custom"
+      },
+      "outputs": {
+        "action": [
+          "wjMZ0ngL5D"
+        ],
+        "list": [
+          "ibbZZ3Q4T5"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 8839,
+        "y": 1310,
+        "z": 88,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "2"
+      },
+      "outputs": {
+        "number": [
+          "t12HiBaIGZ"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "button_event",
+      "info": {
+        "x": 5043,
+        "y": 4285,
+        "z": 89,
+        "color": "#5a5a5a",
+        "height": 329,
+        "width": 311
+      },
+      "inputs": {
+        "buttonid": "8QjgvFZygn"
+      },
+      "outputs": {
+        "action": [
+          "hfg7mGmtaY"
+        ],
+        "user": [],
+        "member": [],
+        "message": [],
+        "button": [
+          "MyQ1APgGxS",
+          "l4pWA9p2mI"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "component_thinking",
+      "info": {
+        "x": 5435,
+        "y": 4397,
+        "z": 90,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 294
+      },
+      "inputs": {
+        "action": "hfg7mGmtaY",
+        "component": "MyQ1APgGxS"
+      },
+      "outputs": {
+        "action": [
+          "xWM8orB1r9"
+        ],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "create_embed_message",
+      "info": {
+        "x": 6828,
+        "y": 3844,
+        "z": 93,
+        "color": "#5a5a5a",
+        "height": 912,
+        "width": 350
+      },
+      "inputs": {
+        "action": "sh6JRkagFH",
+        "color": "RI9qV1Ujat",
+        "thumbnail": "N16nXkSlJy",
+        "author_icon": "F9AZXswB4k",
+        "author_name": "Zxgyek9WfV",
+        "author_url": "RkjAV3kK2c",
+        "title": "ByhF7uKLg0",
+        "url": "kY3O1y3kpf",
+        "description": "8MOak16nd1",
+        "image": "J241nM4y0I",
+        "footer_icon": "3jv0VzmmOU",
+        "footer_text": "tQ6N3KXrnJ",
+        "timestamp": "DrHg6tLHTZ"
+      },
+      "outputs": {
+        "action": [
+          "REVEeTw5OH"
+        ],
+        "message_embed": [
+          "51dlINz6Nv"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 7226,
+        "y": 4275,
+        "z": 94,
+        "color": "#5a5a5a",
+        "height": 402,
+        "width": 360
+      },
+      "inputs": {
+        "action": "REVEeTw5OH",
+        "message_text": "D9kq9t2FDJ",
+        "message_embed": "51dlINz6Nv",
+        "components": "OT9X6pS9ad",
+        "component": "l4pWA9p2mI"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "control_bot_audio",
+      "info": {
+        "x": 5760,
+        "y": 4336,
+        "z": 95,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 448
+      },
+      "inputs": {
+        "action": "xWM8orB1r9",
+        "server": "ZMMkXNgp2d"
+      },
+      "options": {
+        "audio_action_type": "pause"
+      },
+      "outputs": {
+        "action": [
+          "lDj78tWZJz"
+        ]
+      }
+    },
+    {
+      "name": "color",
+      "info": {
+        "x": 6469,
+        "y": 4019,
+        "z": 96,
+        "color": "#5a5a5a",
+        "height": 135,
+        "width": 225
+      },
+      "options": {
+        "color": "#80ffff"
+      },
+      "outputs": {
+        "color": [
+          "RI9qV1Ujat"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "merge_texts_advanced",
+      "info": {
+        "x": 6322,
+        "y": 4315,
+        "z": 97,
+        "color": "#5a5a5a",
+        "height": 305,
+        "width": 479
+      },
+      "inputs": {
+        "action": "lDj78tWZJz",
+        "text1": "pbsaBEjWsD",
+        "text2": "c38c4aKFKL",
+        "text3": "d6ZX1K7fkc"
+      },
+      "options": {
+        "text": "Der song: `${text1}`\n\nWurde Pausiert!"
+      },
+      "outputs": {
+        "action": [
+          "sh6JRkagFH"
+        ],
+        "text": [
+          "8MOak16nd1"
+        ]
+      }
+    },
+    {
+      "name": "boolean",
+      "info": {
+        "x": 6072,
+        "y": 4586,
+        "z": 98,
+        "color": "#5a5a5a",
+        "height": 146,
+        "width": 310
+      },
+      "options": {
+        "boolean_type": "true"
+      },
+      "outputs": {
+        "boolean": [
+          "DrHg6tLHTZ"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "get_volume",
+      "info": {
+        "x": 6792,
+        "y": 2539,
+        "z": 99,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 262
+      },
+      "inputs": {
+        "action": "q67k5ZAtjc",
+        "server": "amqeh5LKib"
+      },
+      "outputs": {
+        "action": [
+          "M00CLhesnD"
+        ],
+        "result": [
+          "xTmZ6eyy4V"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "math_operations",
+      "info": {
+        "x": 7062,
+        "y": 2696,
+        "z": 100,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 538
+      },
+      "inputs": {
+        "action": "M00CLhesnD",
+        "number1": "xTmZ6eyy4V",
+        "number2": "kjCnc3f2dc"
+      },
+      "options": {
+        "math_operation_type": "subtraction"
+      },
+      "outputs": {
+        "action": [
+          "ub68buafKU"
+        ],
+        "number": [
+          "wWovJwasmE",
+          "4avssxt0tC",
+          "z6MjnkGXuk"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 6535,
+        "y": 2781,
+        "z": 101,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "10"
+      },
+      "outputs": {
+        "number": [
+          "kjCnc3f2dc"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "format_number",
+      "info": {
+        "x": 8613,
+        "y": 3034,
+        "z": 103,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 350
+      },
+      "inputs": {
+        "action": "XQJJdrxU67",
+        "number": "wWovJwasmE",
+        "cs": "nODNNV93V9"
+      },
+      "outputs": {
+        "action": [
+          "8UrlhbSCOU"
+        ],
+        "text": [
+          "dAGC9G2Tvl"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "merge_texts_advanced",
+      "info": {
+        "x": 8975,
+        "y": 3001,
+        "z": 104,
+        "color": "#5a5a5a",
+        "height": 305,
+        "width": 479
+      },
+      "inputs": {
+        "action": "8UrlhbSCOU",
+        "text1": "dAGC9G2Tvl",
+        "text2": "E3cqAObVod",
+        "text3": "gBnWwSeVJC"
+      },
+      "options": {
+        "text": "Die lautstärke ist nun `${text1}%`🔉"
+      },
+      "outputs": {
+        "action": [
+          "QxqdX6WD2v"
+        ],
+        "text": [
+          "XM5gd3yh08"
+        ]
+      }
+    },
+    {
+      "name": "set_volume",
+      "info": {
+        "x": 8288,
+        "y": 2806,
+        "z": 105,
+        "color": "#5a5a5a",
+        "height": 246,
+        "width": 262
+      },
+      "inputs": {
+        "action": "T8V29WH0aq",
+        "server": "JuvSS279KB",
+        "volume": "4avssxt0tC"
+      },
+      "outputs": {
+        "action": [
+          "XQJJdrxU67"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "create_button",
+      "info": {
+        "x": 7271,
+        "y": 1334,
+        "z": 106,
+        "color": "#5a5a5a",
+        "height": 482,
+        "width": 311
+      },
+      "inputs": {
+        "action": "YmUJwFOtKi",
+        "setStyle": "yTI2WVjrPp",
+        "setLabel": "r7odpABPLQ",
+        "setEmoji": "LWjUbk8mYo",
+        "setURL": "KvwO1w44tH",
+        "setID": "0m0tY6G4Zc",
+        "setDisabled": "UkdhRilxYP"
+      },
+      "outputs": {
+        "action": [
+          "CoUwGv3qeG"
+        ],
+        "button": [
+          "vezRtYK7st"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "button_style",
+      "info": {
+        "x": 7238,
+        "y": 1104,
+        "z": 107,
+        "color": "#5a5a5a",
+        "height": 146,
+        "width": 308
+      },
+      "options": {
+        "style": "green"
+      },
+      "outputs": {
+        "style": [
+          "yTI2WVjrPp"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "add_item_to_list",
+      "info": {
+        "x": 9809,
+        "y": 2010,
+        "z": 109,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 478
+      },
+      "inputs": {
+        "action": "wjMZ0ngL5D",
+        "list": "ibbZZ3Q4T5",
+        "item": "vezRtYK7st",
+        "custom_position": "gkciaJXcVE"
+      },
+      "options": {
+        "position_type": "custom"
+      },
+      "outputs": {
+        "action": [
+          "WLOP3WsjSs"
+        ],
+        "list": [
+          "RZDVe3Mglj"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 8848,
+        "y": 1139,
+        "z": 110,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "3"
+      },
+      "outputs": {
+        "number": [
+          "gkciaJXcVE"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "text_3x",
+      "info": {
+        "x": 9901,
+        "y": 1531,
+        "z": 111,
+        "color": "#5a5a5a",
+        "height": 366,
+        "width": 358
+      },
+      "options": {
+        "text1": "▶️",
+        "text2": "los",
+        "text3": ""
+      },
+      "outputs": {
+        "text1": [
+          "r7odpABPLQ"
+        ],
+        "text2": [
+          "0m0tY6G4Zc",
+          "ZooRDE8ybG"
+        ],
+        "text3": []
+      },
+      "inputs": {}
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 8844,
+        "y": 1479,
+        "z": 112,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "1"
+      },
+      "outputs": {
+        "number": [
+          "Bc40jfusVW"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "button_style",
+      "info": {
+        "x": 6310,
+        "y": 1103,
+        "z": 113,
+        "color": "#5a5a5a",
+        "height": 146,
+        "width": 308
+      },
+      "options": {
+        "style": "red"
+      },
+      "outputs": {
+        "style": [
+          "e0nzaUEId5"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "create_button",
+      "info": {
+        "x": 7616,
+        "y": 1362,
+        "z": 114,
+        "color": "#5a5a5a",
+        "height": 482,
+        "width": 311
+      },
+      "inputs": {
+        "action": "CoUwGv3qeG",
+        "setStyle": "IJwuvVO2Bl",
+        "setLabel": "6TSTaZdemY",
+        "setEmoji": "21Jn3Zry6c",
+        "setURL": "npOsO4u7QN",
+        "setID": "FD6VhH3MAm",
+        "setDisabled": "pP8wNzT3wg"
+      },
+      "outputs": {
+        "action": [
+          "XKSQw9KcDf"
+        ],
+        "button": [
+          "47nBRjk1yb"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "button_style",
+      "info": {
+        "x": 7546,
+        "y": 1105,
+        "z": 115,
+        "color": "#5a5a5a",
+        "height": 146,
+        "width": 308
+      },
+      "options": {
+        "style": "grey"
+      },
+      "outputs": {
+        "style": [
+          "IJwuvVO2Bl"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "text_3x",
+      "info": {
+        "x": 9500,
+        "y": 1059,
+        "z": 116,
+        "color": "#5a5a5a",
+        "height": 366,
+        "width": 358
+      },
+      "options": {
+        "text1": "lauter",
+        "text2": "🔊",
+        "text3": ""
+      },
+      "outputs": {
+        "text1": [
+          "FD6VhH3MAm",
+          "71eeLOfBNo"
+        ],
+        "text2": [
+          "6TSTaZdemY"
+        ],
+        "text3": []
+      },
+      "inputs": {}
+    },
+    {
+      "name": "add_item_to_list",
+      "info": {
+        "x": 10289,
+        "y": 2020,
+        "z": 117,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 478
+      },
+      "inputs": {
+        "action": "WLOP3WsjSs",
+        "list": "RZDVe3Mglj",
+        "item": "47nBRjk1yb",
+        "custom_position": "4Ml6Ly7dux"
+      },
+      "options": {
+        "position_type": "custom"
+      },
+      "outputs": {
+        "action": [
+          "y8v75Mf13C"
+        ],
+        "list": [
+          "KOw3SEqLZ6"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 8846,
+        "y": 972,
+        "z": 118,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "4"
+      },
+      "outputs": {
+        "number": [
+          "4Ml6Ly7dux"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "button_event",
+      "info": {
+        "x": 5588,
+        "y": 42,
+        "z": 119,
+        "color": "#5a5a5a",
+        "height": 329,
+        "width": 311
+      },
+      "inputs": {
+        "buttonid": "71eeLOfBNo"
+      },
+      "outputs": {
+        "action": [
+          "wULmbz0HIq"
+        ],
+        "user": [
+          "54hjfbZR6Z"
+        ],
+        "member": [],
+        "message": [],
+        "button": [
+          "XaWBTP3sQw",
+          "6O695T7l7T",
+          "kVLX1c2E7N"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "component_thinking",
+      "info": {
+        "x": 5898,
+        "y": 57,
+        "z": 120,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 294
+      },
+      "inputs": {
+        "action": "wULmbz0HIq",
+        "component": "XaWBTP3sQw"
+      },
+      "outputs": {
+        "action": [
+          "2n2yk3cZnJ"
+        ],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "get_volume",
+      "info": {
+        "x": 6196,
+        "y": 62,
+        "z": 121,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 262
+      },
+      "inputs": {
+        "action": "2n2yk3cZnJ",
+        "server": "SxzQ8tVtQ2"
+      },
+      "outputs": {
+        "action": [
+          "sbiJGYBN6o"
+        ],
+        "result": [
+          "VR06sohW6o"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "math_operations",
+      "info": {
+        "x": 6470,
+        "y": 41,
+        "z": 122,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 538
+      },
+      "inputs": {
+        "action": "sbiJGYBN6o",
+        "number1": "VR06sohW6o",
+        "number2": "FGOewy9G3m"
+      },
+      "options": {
+        "math_operation_type": "addition"
+      },
+      "outputs": {
+        "action": [
+          "enGnZfHRkZ"
+        ],
+        "number": [
+          "7XpgNyM6bR",
+          "YrTwABKAga",
+          "WAtBEKy0OP"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 6019,
+        "y": 288,
+        "z": 123,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "10"
+      },
+      "outputs": {
+        "number": [
+          "FGOewy9G3m"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "set_volume",
+      "info": {
+        "x": 7602,
+        "y": 80,
+        "z": 124,
+        "color": "#5a5a5a",
+        "height": 246,
+        "width": 262
+      },
+      "inputs": {
+        "action": "09yXHnXOiL",
+        "server": "aTfne4NlVI",
+        "volume": "7XpgNyM6bR"
+      },
+      "outputs": {
+        "action": [
+          "ndTHmkQQw1"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "format_number",
+      "info": {
+        "x": 7879,
+        "y": 79,
+        "z": 125,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 350
+      },
+      "inputs": {
+        "action": "ndTHmkQQw1",
+        "number": "YrTwABKAga",
+        "cs": "rRdWbjhSXI"
+      },
+      "outputs": {
+        "action": [
+          "SAk8bNR104"
+        ],
+        "text": [
+          "GYDN6Eii3x"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "merge_texts_advanced",
+      "info": {
+        "x": 8233,
+        "y": 67,
+        "z": 126,
+        "color": "#5a5a5a",
+        "height": 305,
+        "width": 479
+      },
+      "inputs": {
+        "action": "SAk8bNR104",
+        "text1": "GYDN6Eii3x",
+        "text2": "L6o8KS6XMh",
+        "text3": "ywXQL5yPuH"
+      },
+      "options": {
+        "text": "Die lautsärke ist nun `${text1}%`"
+      },
+      "outputs": {
+        "action": [
+          "z5Vv5m4xlN"
+        ],
+        "text": [
+          "LF8UPkBHml"
+        ]
+      }
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 10745,
+        "y": 177,
+        "z": 127,
+        "color": "#5a5a5a",
+        "height": 402,
+        "width": 358
+      },
+      "inputs": {
+        "action": "TERrDpwXGq",
+        "message_text": "LF8UPkBHml",
+        "message_embed": "8Ox8EvreFJ",
+        "components": "9gQMkj6iiW",
+        "component": "6O695T7l7T"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "get_volume",
+      "info": {
+        "x": 3225,
+        "y": 1594,
+        "z": 128,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 262
+      },
+      "inputs": {
+        "action": "K3ELjnUKHi",
+        "server": "Qx8dBQzmpu"
+      },
+      "outputs": {
+        "action": [
+          "ErHLywio3y"
+        ],
+        "result": [
+          "bKFhNtIfRD"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "edit_embed_message",
+      "info": {
+        "x": 11431,
+        "y": 2460,
+        "z": 129,
+        "color": "#5a5a5a",
+        "height": 990,
+        "width": 350
+      },
+      "inputs": {
+        "action": "0beQugImsh",
+        "message_embed": "6D9rQxU2l3",
+        "color": "Y8n4hwqnAj",
+        "thumbnail": "wm1VXmahGS",
+        "author_icon": "TuoJZuhiG3",
+        "author_name": "T99PfGPS2D",
+        "author_url": "DXV2ySZVI1",
+        "title": "fWKvPDRmX1",
+        "url": "PSOwd3MAbI",
+        "description": "NcJlyxqEeG",
+        "image": "A8cwobYYRO",
+        "footer_icon": "8mxb3JPlVF",
+        "footer_text": "EHa8dwqebr",
+        "timestamp": "JTbcoXm4L6"
+      },
+      "outputs": {
+        "action": [
+          "eEow9fQXf8"
+        ],
+        "message_embed": [
+          "LFpZ7VFAA0"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "get_volume",
+      "info": {
+        "x": 9512,
+        "y": 3075,
+        "z": 131,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 262
+      },
+      "inputs": {
+        "action": "QxqdX6WD2v",
+        "server": "zsiQLHlB7t"
+      },
+      "outputs": {
+        "action": [
+          "YVzkRlrKWd"
+        ],
+        "result": [
+          "ID1qZhcjOf"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "edit_message",
+      "info": {
+        "x": 11774,
+        "y": 2740,
+        "z": 132,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "eEow9fQXf8",
+        "message": "hN7m5IYH8e",
+        "message_text": "aladTfSNxm",
+        "message_embed": "LFpZ7VFAA0"
+      },
+      "outputs": {
+        "action": [
+          "8A9TpKneIG"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "multi_embed_tool",
+      "info": {
+        "x": 10692,
+        "y": 2448,
+        "z": 133,
+        "color": "#5a5a5a",
+        "height": 981,
+        "width": 740
+      },
+      "inputs": {
+        "action": "Np4uQcMMLV",
+        "text1": "NQyjIBWGXq",
+        "text2": "6vZ782Ciib",
+        "text3": "OnBFUJaDgJ",
+        "text4": "GTdNIVzY9S",
+        "text5": "QjOrWfNiPa",
+        "text6": "ID1qZhcjOf"
+      },
+      "options": {
+        "color": "#0080ff",
+        "mergedtext1": "",
+        "mergedtext2": "",
+        "mergedtext3": "",
+        "mergedtext4": "",
+        "mergedtext5": "💿Spielt grade",
+        "mergedtext6": "",
+        "mergedtext7": "📃Song:\n${text2}\n\n⏲️Dauer:\n${text3}\n\n👀Views:\n${text4}\n\n🧑Author:\n${text5}\n\n🔊Lautstärke:\n`${text6}%`",
+        "mergedtext8": "",
+        "mergedtext9": "",
+        "mergedtext10": "",
+        "boolean_type": "true"
+      },
+      "outputs": {
+        "action": [
+          "0beQugImsh"
+        ],
+        "color": [
+          "Y8n4hwqnAj"
+        ],
+        "mergedtext1": [],
+        "mergedtext2": [],
+        "mergedtext3": [],
+        "mergedtext4": [],
+        "mergedtext5": [
+          "fWKvPDRmX1"
+        ],
+        "mergedtext6": [],
+        "mergedtext7": [
+          "NcJlyxqEeG"
+        ],
+        "mergedtext8": [],
+        "mergedtext9": [],
+        "mergedtext10": [],
+        "boolean": []
+      }
+    },
+    {
+      "name": "button_style",
+      "info": {
+        "x": 7831,
+        "y": 1113,
+        "z": 135,
+        "color": "#5a5a5a",
+        "height": 146,
+        "width": 308
+      },
+      "options": {
+        "style": "red"
+      },
+      "outputs": {
+        "style": []
+      },
+      "inputs": {}
+    },
+    {
+      "name": "text_3x",
+      "info": {
+        "x": 10289,
+        "y": 1515,
+        "z": 136,
+        "color": "#5a5a5a",
+        "height": 366,
+        "width": 358
+      },
+      "options": {
+        "text1": "⏏️",
+        "text2": "leave",
+        "text3": ""
+      },
+      "outputs": {
+        "text1": [
+          "Mnl5nA4pw8"
+        ],
+        "text2": [
+          "6N0p2SMQML",
+          "IOzK80oTSJ"
+        ],
+        "text3": []
+      },
+      "inputs": {}
+    },
+    {
+      "name": "button_event",
+      "info": {
+        "x": 12558,
+        "y": 178,
+        "z": 137,
+        "color": "#5a5a5a",
+        "height": 329,
+        "width": 311
+      },
+      "inputs": {
+        "buttonid": "IOzK80oTSJ"
+      },
+      "outputs": {
+        "action": [
+          "CqkhqlZNC7"
+        ],
+        "user": [],
+        "member": [],
+        "message": [],
+        "button": [
+          "OXJokihGKK",
+          "PqQAogxhwF"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "component_thinking",
+      "info": {
+        "x": 12886,
+        "y": 239,
+        "z": 138,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 294
+      },
+      "inputs": {
+        "action": "CqkhqlZNC7",
+        "component": "OXJokihGKK"
+      },
+      "outputs": {
+        "action": [
+          "Fmntf0Ybe7"
+        ],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "control_bot_audio",
+      "info": {
+        "x": 13190,
+        "y": 231,
+        "z": 139,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 448
+      },
+      "inputs": {
+        "action": "Fmntf0Ybe7",
+        "server": "TytJ3KDSzz"
+      },
+      "options": {
+        "audio_action_type": "end"
+      },
+      "outputs": {
+        "action": [
+          "EvhKUxrbU4"
+        ]
+      }
+    },
+    {
+      "name": "leave_voice_channel",
+      "info": {
+        "x": 13662,
+        "y": 226,
+        "z": 140,
+        "color": "#5a5a5a",
+        "height": 206,
+        "width": 306
+      },
+      "inputs": {
+        "action": "EvhKUxrbU4",
+        "voice_channel": "nyN8EwFCSN"
+      },
+      "outputs": {
+        "action": [
+          "MmT9rQVHrK"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "delete_message",
+      "info": {
+        "x": 13987,
+        "y": 201,
+        "z": 141,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "MmT9rQVHrK",
+        "message": "jbH6bwLeBw",
+        "timeout": "d7dzm27PiX",
+        "reason": "X0OJiaRRmu"
+      },
+      "outputs": {
+        "action": [
+          "j5qZ6paZkJ"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "delete_message",
+      "info": {
+        "x": 14328,
+        "y": 190,
+        "z": 142,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "j5qZ6paZkJ",
+        "message": "DXtpnR8WMH",
+        "timeout": "xAjG8TGVqL",
+        "reason": "rhSrnegDOq"
+      },
+      "outputs": {
+        "action": [
+          "T2SLxp6O9T"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 14640,
+        "y": 170,
+        "z": 143,
+        "color": "#5a5a5a",
+        "height": 402,
+        "width": 359
+      },
+      "inputs": {
+        "action": "T2SLxp6O9T",
+        "message_text": "PTpQ81meig",
+        "message_embed": "agehEc4iTR",
+        "components": "oYKzrrXSyd",
+        "component": "PqQAogxhwF"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 15003,
+        "y": 442,
+        "z": 144,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "bye bye"
+      },
+      "outputs": {
+        "text": [
+          "PTpQ81meig"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "edit_embed_message",
+      "info": {
+        "x": 10076,
+        "y": 6,
+        "z": 145,
+        "color": "#5a5a5a",
+        "height": 990,
+        "width": 350
+      },
+      "inputs": {
+        "action": "JOaaI8poc2",
+        "message_embed": "TZP79ougfZ",
+        "color": "8rNTUvVM5U",
+        "thumbnail": "KsiDRLcpI9",
+        "author_icon": "ioNlIahhmU",
+        "author_name": "c1Yhg5b1wV",
+        "author_url": "rcyGSA4w3p",
+        "title": "qlcumE8tuf",
+        "url": "FGRJgYnJxq",
+        "description": "s1MQIUjAwa",
+        "image": "Hf1VYPYKXv",
+        "footer_icon": "DgvZ5d0WFx",
+        "footer_text": "KOEgNX0uz3",
+        "timestamp": "n41GW6lq8G"
+      },
+      "outputs": {
+        "action": [
+          "ikJ5V1lvrG"
+        ],
+        "message_embed": [
+          "mI8t8oiD5O"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "multi_embed_tool",
+      "info": {
+        "x": 9276,
+        "y": 0,
+        "z": 146,
+        "color": "#5a5a5a",
+        "height": 825,
+        "width": 748
+      },
+      "inputs": {
+        "action": "KlsjW8Njrl",
+        "text1": "d47rHvwyv5",
+        "text2": "nHsID6OCr9",
+        "text3": "x92XHIY2rV",
+        "text4": "Fad1xCkoUG",
+        "text5": "1eM0M6GOV4",
+        "text6": "dOQ2GeLqhd"
+      },
+      "options": {
+        "color": "#0080c0",
+        "mergedtext1": "",
+        "mergedtext2": "",
+        "mergedtext3": "",
+        "mergedtext4": "",
+        "mergedtext5": "💿Spielt grade",
+        "mergedtext6": "",
+        "mergedtext7": "📃Song:\n${text2}\n\n⏲️Dauer:\n${text3}\n\n👀Views:\n${text4}\n\n🧑Author:\n${text5}\n\n🔊Lautstärke\n`${text6}%`",
+        "mergedtext8": "",
+        "mergedtext9": "",
+        "mergedtext10": "",
+        "boolean_type": "true"
+      },
+      "outputs": {
+        "action": [
+          "JOaaI8poc2"
+        ],
+        "color": [
+          "8rNTUvVM5U"
+        ],
+        "mergedtext1": [],
+        "mergedtext2": [],
+        "mergedtext3": [],
+        "mergedtext4": [],
+        "mergedtext5": [
+          "qlcumE8tuf"
+        ],
+        "mergedtext6": [],
+        "mergedtext7": [
+          "s1MQIUjAwa"
+        ],
+        "mergedtext8": [],
+        "mergedtext9": [],
+        "mergedtext10": [],
+        "boolean": []
+      }
+    },
+    {
+      "name": "get_volume",
+      "info": {
+        "x": 8762,
+        "y": 165,
+        "z": 147,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 262
+      },
+      "inputs": {
+        "action": "z5Vv5m4xlN",
+        "server": "JaRK5b5oSj"
+      },
+      "outputs": {
+        "action": [
+          "EWT2eU19Ui"
+        ],
+        "result": [
+          "dOQ2GeLqhd"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "edit_message",
+      "info": {
+        "x": 10435,
+        "y": 261,
+        "z": 148,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "ikJ5V1lvrG",
+        "message": "uZ6ktoBbSi",
+        "message_text": "aOCoMurWiJ",
+        "message_embed": "mI8t8oiD5O"
+      },
+      "outputs": {
+        "action": [
+          "TERrDpwXGq"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "button_event",
+      "info": {
+        "x": 11308,
+        "y": 1138,
+        "z": 149,
+        "color": "#5a5a5a",
+        "height": 329,
+        "width": 311
+      },
+      "inputs": {
+        "buttonid": "ZooRDE8ybG"
+      },
+      "outputs": {
+        "action": [
+          "v2jfA09UWY"
+        ],
+        "user": [],
+        "member": [],
+        "message": [],
+        "button": [
+          "RBjQaehQHq",
+          "qVneM59DrY"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "component_thinking",
+      "info": {
+        "x": 11640,
+        "y": 1247,
+        "z": 150,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 294
+      },
+      "inputs": {
+        "action": "v2jfA09UWY",
+        "component": "RBjQaehQHq"
+      },
+      "outputs": {
+        "action": [
+          "RKnFkO9MSY"
+        ],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "control_bot_audio",
+      "info": {
+        "x": 12022,
+        "y": 1255,
+        "z": 151,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 448
+      },
+      "inputs": {
+        "action": "RKnFkO9MSY",
+        "server": "rK5WJpbpMl"
+      },
+      "options": {
+        "audio_action_type": "resume"
+      },
+      "outputs": {
+        "action": [
+          "nfST6qSMCl"
+        ]
+      }
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 13702,
+        "y": 1208,
+        "z": 152,
+        "color": "#8521c0",
+        "height": 402,
+        "width": 359
+      },
+      "inputs": {
+        "action": "qQ8db8uLOa",
+        "message_text": "7sKLGJAyhQ",
+        "message_embed": "T8LObvPc7y",
+        "components": "EjTVarNAHt",
+        "component": "qVneM59DrY"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "multi_embed_tool",
+      "info": {
+        "x": 12466,
+        "y": 794,
+        "z": 153,
+        "color": "#5a5a5a",
+        "height": 908,
+        "width": 574
+      },
+      "inputs": {
+        "action": "nfST6qSMCl",
+        "text1": "GnetFvacd1",
+        "text2": "8HQXSo91I7",
+        "text3": "g92QLE8JiA",
+        "text4": "wbHjtrCh2K",
+        "text5": "FAuY3lXB5e",
+        "text6": "IazipsD6xZ"
+      },
+      "options": {
+        "color": "#00ffff",
+        "mergedtext1": "",
+        "mergedtext2": "",
+        "mergedtext3": "",
+        "mergedtext4": "",
+        "mergedtext5": "",
+        "mergedtext6": "",
+        "mergedtext7": "Der song: `${text1}`\n\nwird Fortgesetezt",
+        "mergedtext8": "",
+        "mergedtext9": "",
+        "mergedtext10": "",
+        "boolean_type": "true"
+      },
+      "outputs": {
+        "action": [
+          "ajV0uAaJwn"
+        ],
+        "color": [
+          "sFXRPsCAh5"
+        ],
+        "mergedtext1": [],
+        "mergedtext2": [],
+        "mergedtext3": [],
+        "mergedtext4": [],
+        "mergedtext5": [],
+        "mergedtext6": [],
+        "mergedtext7": [
+          "0COLNgTYAw"
+        ],
+        "mergedtext8": [],
+        "mergedtext9": [],
+        "mergedtext10": [],
+        "boolean": [
+          "Ppt1xQlQzs"
+        ]
+      }
+    },
+    {
+      "name": "create_embed_message",
+      "info": {
+        "x": 13088,
+        "y": 803,
+        "z": 154,
+        "color": "#5a5a5a",
+        "height": 912,
+        "width": 350
+      },
+      "inputs": {
+        "action": "ajV0uAaJwn",
+        "color": "sFXRPsCAh5",
+        "thumbnail": "IktCgxBfJQ",
+        "author_icon": "T2MuFqDbU1",
+        "author_name": "xUG9sHCFmp",
+        "author_url": "xujNWD2jFX",
+        "title": "kKQtZ5PfAS",
+        "url": "f4UETX5TbK",
+        "description": "0COLNgTYAw",
+        "image": "xvcn46j8Bp",
+        "footer_icon": "QazrUvLg9N",
+        "footer_text": "xGuXszCwzd",
+        "timestamp": "Ppt1xQlQzs"
+      },
+      "outputs": {
+        "action": [
+          "qQ8db8uLOa"
+        ],
+        "message_embed": [
+          "T8LObvPc7y"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "get_user_info_x3",
+      "info": {
+        "x": 3186,
+        "y": 2005,
+        "z": 155,
+        "color": "#5a5a5a",
+        "height": 300,
+        "width": 615
+      },
+      "inputs": {
+        "action": "ErHLywio3y",
+        "user": "t4jOQtZmDG"
+      },
+      "options": {
+        "user_info1": "2",
+        "user_info2": "15",
+        "user_info3": "1"
+      },
+      "outputs": {
+        "action": [
+          "qfff0OwfAw"
+        ],
+        "result1": [
+          "MplcQ5iYdD"
+        ],
+        "result2": [
+          "8F2mVSKoJq"
+        ],
+        "result3": []
+      }
+    },
+    {
+      "name": "get_user_info_x3",
+      "info": {
+        "x": 8609,
+        "y": 429,
+        "z": 156,
+        "color": "#5a5a5a",
+        "height": 300,
+        "width": 615
+      },
+      "inputs": {
+        "action": "EWT2eU19Ui",
+        "user": "54hjfbZR6Z"
+      },
+      "options": {
+        "user_info1": "2",
+        "user_info2": "15",
+        "user_info3": "1"
+      },
+      "outputs": {
+        "action": [
+          "KlsjW8Njrl"
+        ],
+        "result1": [
+          "ioNlIahhmU"
+        ],
+        "result2": [
+          "c1Yhg5b1wV"
+        ],
+        "result3": []
+      }
+    },
+    {
+      "name": "get_user_info_x3",
+      "info": {
+        "x": 9842,
+        "y": 3050,
+        "z": 157,
+        "color": "#5a5a5a",
+        "height": 300,
+        "width": 615
+      },
+      "inputs": {
+        "action": "YVzkRlrKWd",
+        "user": "K4bDbli1e3"
+      },
+      "options": {
+        "user_info1": "2",
+        "user_info2": "16",
+        "user_info3": "1"
+      },
+      "outputs": {
+        "action": [
+          "Np4uQcMMLV"
+        ],
+        "result1": [
+          "TuoJZuhiG3"
+        ],
+        "result2": [
+          "T99PfGPS2D"
+        ],
+        "result3": []
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 8263,
+        "y": 963,
+        "z": 159,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "210"
+      },
+      "outputs": {
+        "number": [
+          "GBYGERzrdp"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 8272,
+        "y": 1279,
+        "z": 160,
+        "color": "#5a5a5a",
+        "height": 402,
+        "width": 364
+      },
+      "inputs": {
+        "action": "ZuXlBCNPMa",
+        "message_text": "rRmYKs0C10",
+        "message_embed": "8ugyRp7vC6",
+        "components": "JjCQa9TeDm",
+        "component": "kVLX1c2E7N"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 8267,
+        "y": 1105,
+        "z": 161,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "Die maximale Lautstärke ist `200%`!"
+      },
+      "outputs": {
+        "text": [
+          "rRmYKs0C10"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "check_comparison",
+      "info": {
+        "x": 7040,
+        "y": 68,
+        "z": 164,
+        "color": "#5a5a5a",
+        "height": 246,
+        "width": 528
+      },
+      "inputs": {
+        "action": "enGnZfHRkZ",
+        "value1": "WAtBEKy0OP",
+        "value2": "GBYGERzrdp"
+      },
+      "options": {
+        "comparison_type": "greater_than_or_equal"
+      },
+      "outputs": {
+        "action1": [
+          "ZuXlBCNPMa"
+        ],
+        "action2": [
+          "09yXHnXOiL"
+        ]
+      }
+    },
+    {
+      "name": "check_comparison",
+      "info": {
+        "x": 7689,
+        "y": 2788,
+        "z": 165,
+        "color": "#5a5a5a",
+        "height": 246,
+        "width": 528
+      },
+      "inputs": {
+        "action": "ub68buafKU",
+        "value1": "z6MjnkGXuk",
+        "value2": "dBNPXbn7UX"
+      },
+      "options": {
+        "comparison_type": "less_than_or_equal"
+      },
+      "outputs": {
+        "action1": [
+          "dhuGyFn4dd"
+        ],
+        "action2": [
+          "T8V29WH0aq"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 6932,
+        "y": 2958,
+        "z": 166,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "20"
+      },
+      "outputs": {
+        "number": [
+          "dBNPXbn7UX"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "merge_actions",
+      "info": {
+        "x": 345,
+        "y": 5496,
+        "z": 168,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 265
+      },
+      "inputs": {
+        "action1": "5fT0JyoZOG",
+        "action2": "aV87s5SdFB"
+      },
+      "outputs": {
+        "action": [
+          "N3aJnf4Q4r"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "set_bot_activity",
+      "info": {
+        "x": 840,
+        "y": 5457,
+        "z": 169,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 460
+      },
+      "inputs": {
+        "action": "N3aJnf4Q4r",
+        "activity_name": "FSrYq9GRtG",
+        "activity_url": "qm0qEbZWcx"
+      },
+      "options": {
+        "activity_type": "listening"
+      },
+      "outputs": {
+        "action": [
+          "DSOu2V233Z"
+        ]
+      }
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 469,
+        "y": 5695,
+        "z": 170,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "Music🎧"
+      },
+      "outputs": {
+        "text": [
+          "FSrYq9GRtG"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "wait",
+      "info": {
+        "x": 1804,
+        "y": 5602,
+        "z": 172,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 406
+      },
+      "inputs": {
+        "action": "DSOu2V233Z",
+        "time": "o7WS6xclgO"
+      },
+      "options": {
+        "time_type": "seconds"
+      },
+      "outputs": {
+        "action": [
+          "adkLCRSZVY"
+        ]
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 2367,
+        "y": 5760,
+        "z": 173,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "10"
+      },
+      "outputs": {
+        "number": [
+          "o7WS6xclgO",
+          "w3MZ50JpNi"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "set_bot_activity",
+      "info": {
+        "x": 827,
+        "y": 5885,
+        "z": 174,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 460
+      },
+      "inputs": {
+        "action": "adkLCRSZVY",
+        "activity_name": "HXFTaWtzfg",
+        "activity_url": "iZ9z2GaScx"
+      },
+      "options": {
+        "activity_type": "streaming"
+      },
+      "outputs": {
+        "action": [
+          "CfUOhiag1a"
+        ]
+      }
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 461,
+        "y": 5929,
+        "z": 175,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "youtube"
+      },
+      "outputs": {
+        "text": [
+          "HXFTaWtzfg"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "wait",
+      "info": {
+        "x": 1794,
+        "y": 5977,
+        "z": 177,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 406
+      },
+      "inputs": {
+        "action": "CfUOhiag1a",
+        "time": "w3MZ50JpNi"
+      },
+      "options": {
+        "time_type": "seconds"
+      },
+      "outputs": {
+        "action": [
+          "aV87s5SdFB"
+        ]
+      }
+    },
+    {
+      "name": "console_log",
+      "info": {
+        "x": 53,
+        "y": 5884,
+        "z": 178,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 252
+      },
+      "inputs": {
+        "action": "3Tj0pmifVk",
+        "value": "5KmpyaeDg9"
+      },
+      "outputs": {
+        "action": []
+      },
+      "options": {}
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 1,
+        "y": 6174,
+        "z": 179,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "Your music bot is ready!"
+      },
+      "outputs": {
+        "text": [
+          "5KmpyaeDg9"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 7309,
+        "y": 3137,
+        "z": 180,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "Die lautstärke kann nicht weiter runter gehen!"
+      },
+      "outputs": {
+        "text": [
+          "AnOKbfxJuh"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 7749,
+        "y": 3032,
+        "z": 181,
+        "color": "#5a5a5a",
+        "height": 402,
+        "width": 363
+      },
+      "inputs": {
+        "action": "dhuGyFn4dd",
+        "message_text": "AnOKbfxJuh",
+        "message_embed": "Y3cwbQNCdY",
+        "components": "1ytjVSfKeL",
+        "component": "1a9ovs87tb"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 435,
+        "y": 6135,
+        "z": 182,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "https://www.twitch.tv/shenzyvalo"
+      },
+      "outputs": {
+        "text": [
+          "iZ9z2GaScx"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "command_event_with_text",
+      "info": {
+        "x": 8523,
+        "y": 3793,
+        "z": 183,
+        "color": "#5a5a5a",
+        "height": 585,
+        "width": 774
+      },
+      "inputs": {
+        "command_slowmode": "pv0tx0pQtK"
+      },
+      "options": {
+        "command_name": "queue",
+        "custom_prefix": "",
+        "command_restriction": "none",
+        "required_member_permission": "none",
+        "case_sensitive": "no",
+        "command_slowmode_restriction": "none"
+      },
+      "outputs": {
+        "action1": [
+          "emWCBOatUL"
+        ],
+        "action2": [],
+        "message": [],
+        "server": [
+          "FflfYdGaq2"
+        ],
+        "channel": [
+          "EzIMX2sVik",
+          "lDQW1am14O",
+          "FyscAu2jen"
+        ],
+        "vc": [],
+        "user": [],
+        "member": [],
+        "error_message": []
+      }
+    },
+    {
+      "name": "get_bot_audio_info",
+      "info": {
+        "x": 9467,
+        "y": 3908,
+        "z": 184,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 610
+      },
+      "inputs": {
+        "action": "emWCBOatUL",
+        "server": "FflfYdGaq2"
+      },
+      "options": {
+        "audio_info": "1"
+      },
+      "outputs": {
+        "action": [
+          "hq2fKeMpMc"
+        ],
+        "result": [
+          "V7O6SMfVqb",
+          "QZNGqFY8tW"
+        ]
+      }
+    },
+    {
+      "name": "check_if_value_exists",
+      "info": {
+        "x": 10150,
+        "y": 3921,
+        "z": 185,
+        "color": "#5a5a5a",
+        "height": 205,
+        "width": 296
+      },
+      "inputs": {
+        "action": "hq2fKeMpMc",
+        "value": "V7O6SMfVqb"
+      },
+      "outputs": {
+        "action1": [
+          "FhTRpCLnu9"
+        ],
+        "action2": [
+          "k2kN6ByFtR"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "Better_send_messagev2",
+      "info": {
+        "x": 9675,
+        "y": 4159,
+        "z": 186,
+        "color": "#5a5a5a",
+        "height": 600,
+        "width": 539
+      },
+      "inputs": {
+        "action": "k2kN6ByFtR",
+        "channel": "EzIMX2sVik",
+        "embed": "EUwg65dG9a",
+        "buttons": "LquzZ8Cywa",
+        "attachment": "iOyWUyh8PO",
+        "text1": "xei3vr4DBF",
+        "text2": "Al3FOdC2q8",
+        "text3": "ZpEeGffS0D",
+        "text4": "ks9X388KJy"
+      },
+      "options": {
+        "TTS": "false",
+        "smsg": "false",
+        "text": "queue ist Leer!"
+      },
+      "outputs": {
+        "action": [],
+        "message": []
+      }
+    },
+    {
+      "name": "multi_embed_tool",
+      "info": {
+        "x": 10572,
+        "y": 3872,
+        "z": 187,
+        "color": "#5a5a5a",
+        "height": 998,
+        "width": 701
+      },
+      "inputs": {
+        "action": "FhTRpCLnu9",
+        "text1": "MrfdTzuZlk",
+        "text2": "L6LB0M9Qvj",
+        "text3": "YtceufRL63",
+        "text4": "6h1eMtvMcc",
+        "text5": "mb8uiExvef",
+        "text6": "djBmbHAoKY"
+      },
+      "options": {
+        "color": "#ff8000",
+        "mergedtext1": "https://media.discordapp.net/attachments/862013534850383892/959801927179309066/comp-1.gif",
+        "mergedtext2": "",
+        "mergedtext3": "",
+        "mergedtext4": "",
+        "mergedtext5": "Warte...",
+        "mergedtext6": "",
+        "mergedtext7": "Dies kann was Dauern!",
+        "mergedtext8": "",
+        "mergedtext9": "",
+        "mergedtext10": "Hol dir ein Kaffe☕",
+        "boolean_type": "true"
+      },
+      "outputs": {
+        "action": [
+          "FELVOyD485"
+        ],
+        "color": [
+          "4TSCcoZfnd"
+        ],
+        "mergedtext1": [
+          "bUkm788jiZ"
+        ],
+        "mergedtext2": [],
+        "mergedtext3": [],
+        "mergedtext4": [],
+        "mergedtext5": [
+          "xYGcv4W51d"
+        ],
+        "mergedtext6": [],
+        "mergedtext7": [
+          "mFpZEzMPtt"
+        ],
+        "mergedtext8": [],
+        "mergedtext9": [],
+        "mergedtext10": [
+          "JzPzGBbfim"
+        ],
+        "boolean": [
+          "Vm6zNCxWeO"
+        ]
+      }
+    },
+    {
+      "name": "create_embed_message",
+      "info": {
+        "x": 11401,
+        "y": 3935,
+        "z": 188,
+        "color": "#5a5a5a",
+        "height": 912,
+        "width": 350
+      },
+      "inputs": {
+        "action": "FELVOyD485",
+        "color": "4TSCcoZfnd",
+        "thumbnail": "bUkm788jiZ",
+        "author_icon": "GYGxVYXGue",
+        "author_name": "YN2hWUi0tk",
+        "author_url": "NAkP21BOeC",
+        "title": "xYGcv4W51d",
+        "url": "vjM1dWmkoV",
+        "description": "mFpZEzMPtt",
+        "image": "nh0z10ArUz",
+        "footer_icon": "IodnfTjkif",
+        "footer_text": "JzPzGBbfim",
+        "timestamp": "Vm6zNCxWeO"
+      },
+      "outputs": {
+        "action": [
+          "GM5aVjI8sl"
+        ],
+        "message_embed": [
+          "NqJAhHh5q2"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "Better_send_messagev2",
+      "info": {
+        "x": 11807,
+        "y": 4291,
+        "z": 189,
+        "color": "#5a5a5a",
+        "height": 600,
+        "width": 539
+      },
+      "inputs": {
+        "action": "GM5aVjI8sl",
+        "channel": "lDQW1am14O",
+        "embed": "NqJAhHh5q2",
+        "buttons": "1SKeWp3bkB",
+        "attachment": "0G8SvczsSz",
+        "text1": "r4K8zfpKPM",
+        "text2": "W1Zlk56c1U",
+        "text3": "cCpfBlw8mw",
+        "text4": "HJg7SjEadS"
+      },
+      "options": {
+        "TTS": "false",
+        "smsg": "false",
+        "text": ""
+      },
+      "outputs": {
+        "action": [
+          "2UN62EodAI"
+        ],
+        "message": [
+          "6eTaFBm7oO"
+        ]
+      }
+    },
+    {
+      "name": "queue_loop",
+      "info": {
+        "x": 12734,
+        "y": 4618,
+        "z": 190,
+        "color": "#5a5a5a",
+        "height": 292,
+        "width": 296
+      },
+      "inputs": {
+        "action": "YUgFJunPHt",
+        "list": "QZNGqFY8tW",
+        "wait": "s3MTbmGnX6"
+      },
+      "outputs": {
+        "action": [
+          "vztG1MrDmA"
+        ],
+        "action2": [
+          "Q4zDlF1iMR"
+        ],
+        "song": [
+          "nCMpf90MQk"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "create_list",
+      "info": {
+        "x": 12444,
+        "y": 4690,
+        "z": 191,
+        "color": "#5a5a5a",
+        "height": 173,
+        "width": 252
+      },
+      "inputs": {
+        "action": "2UN62EodAI"
+      },
+      "outputs": {
+        "action": [
+          "YUgFJunPHt"
+        ],
+        "list": [
+          "R1nugs7nue"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "add_item_to_list",
+      "info": {
+        "x": 13124,
+        "y": 4601,
+        "z": 192,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 478
+      },
+      "inputs": {
+        "action": "vztG1MrDmA",
+        "list": "R1nugs7nue",
+        "item": "nCMpf90MQk",
+        "custom_position": "3auzWTpIG1"
+      },
+      "options": {
+        "position_type": "last"
+      },
+      "outputs": {
+        "action": [],
+        "list": [
+          "E9k6Tx2fdB"
+        ]
+      }
+    },
+    {
+      "name": "sort_list_2",
+      "info": {
+        "x": 12577,
+        "y": 5140,
+        "z": 193,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 502
+      },
+      "inputs": {
+        "action": "Q4zDlF1iMR",
+        "list": "E9k6Tx2fdB"
+      },
+      "options": {
+        "sort": "nan"
+      },
+      "outputs": {
+        "action": [
+          "ybsDQ1hT1m"
+        ],
+        "list": [
+          "SWEid0qtUe"
+        ]
+      }
+    },
+    {
+      "name": "convert_list_to_text",
+      "info": {
+        "x": 13305,
+        "y": 5120,
+        "z": 194,
+        "color": "#5a5a5a",
+        "height": 246,
+        "width": 276
+      },
+      "inputs": {
+        "action": "ybsDQ1hT1m",
+        "list": "SWEid0qtUe",
+        "separator": "9HevBOtg1r"
+      },
+      "outputs": {
+        "action": [
+          "9RnlbL8t70"
+        ],
+        "text": [
+          "YXJ1ECNCE2"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "replace_text",
+      "info": {
+        "x": 13691,
+        "y": 5093,
+        "z": 195,
+        "color": "#5a5a5a",
+        "height": 305,
+        "width": 490
+      },
+      "inputs": {
+        "action": "9RnlbL8t70",
+        "source_text": "YXJ1ECNCE2",
+        "old_text": "yiygKl3w8u",
+        "new_text": "iMT4ZSbYVn"
+      },
+      "options": {
+        "replacement_type": "first"
+      },
+      "outputs": {
+        "action": [
+          "Ej54k3X5sm"
+        ],
+        "text": [
+          "LrSdztOm6D"
+        ]
+      }
+    },
+    {
+      "name": "text_2x",
+      "info": {
+        "x": 13234,
+        "y": 5405,
+        "z": 196,
+        "color": "#5a5a5a",
+        "height": 267,
+        "width": 358
+      },
+      "options": {
+        "text1": "⭐1",
+        "text2": "💿Grade Spielt"
+      },
+      "outputs": {
+        "text1": [
+          "yiygKl3w8u"
+        ],
+        "text2": [
+          "iMT4ZSbYVn"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "multi_embed_tool",
+      "info": {
+        "x": 14331,
+        "y": 4951,
+        "z": 197,
+        "color": "#5a5a5a",
+        "height": 977,
+        "width": 707
+      },
+      "inputs": {
+        "action": "Ej54k3X5sm",
+        "text1": "LrSdztOm6D",
+        "text2": "qaNJzPazPf",
+        "text3": "6sqpzwfg1r",
+        "text4": "emfitEQLiB",
+        "text5": "eeGVdqu47Q",
+        "text6": "1p8AGlgozo"
+      },
+      "options": {
+        "color": "#00ffff",
+        "mergedtext1": "https://media.giphy.com/media/blSTtZehjAZ8I/giphy.gif",
+        "mergedtext2": "",
+        "mergedtext3": "",
+        "mergedtext4": "",
+        "mergedtext5": "queue",
+        "mergedtext6": "",
+        "mergedtext7": "${text1}",
+        "mergedtext8": "",
+        "mergedtext9": "",
+        "mergedtext10": "",
+        "boolean_type": "true"
+      },
+      "outputs": {
+        "action": [
+          "noalhb955X"
+        ],
+        "color": [
+          "UddM1i6idh"
+        ],
+        "mergedtext1": [
+          "jshVsmygHk"
+        ],
+        "mergedtext2": [],
+        "mergedtext3": [],
+        "mergedtext4": [],
+        "mergedtext5": [
+          "bQ51xeKTYX"
+        ],
+        "mergedtext6": [],
+        "mergedtext7": [
+          "aghniCQ3xv"
+        ],
+        "mergedtext8": [],
+        "mergedtext9": [],
+        "mergedtext10": [],
+        "boolean": [
+          "UlrGydguGi"
+        ]
+      }
+    },
+    {
+      "name": "create_embed_message",
+      "info": {
+        "x": 15051,
+        "y": 4982,
+        "z": 198,
+        "color": "#5a5a5a",
+        "height": 912,
+        "width": 350
+      },
+      "inputs": {
+        "action": "noalhb955X",
+        "color": "UddM1i6idh",
+        "thumbnail": "jshVsmygHk",
+        "author_icon": "sbSa5RPLrx",
+        "author_name": "7U1BwsxxrG",
+        "author_url": "N5bXCaNcxJ",
+        "title": "bQ51xeKTYX",
+        "url": "fSzLtbbAod",
+        "description": "aghniCQ3xv",
+        "image": "dUq0RsS8FA",
+        "footer_icon": "ZIJLShPUiv",
+        "footer_text": "RNODPZsdi2",
+        "timestamp": "UlrGydguGi"
+      },
+      "outputs": {
+        "action": [
+          "2lp2638X2h"
+        ],
+        "message_embed": [
+          "2tiEXN2bIF"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "delete_message",
+      "info": {
+        "x": 16479,
+        "y": 5546,
+        "z": 200,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "a0Lx30GZwp",
+        "message": "6eTaFBm7oO",
+        "timeout": "K30arFdzsP",
+        "reason": "Gv7rVBEyS6"
+      },
+      "outputs": {
+        "action": []
+      },
+      "options": {}
+    },
+    {
+      "name": "delete_message",
+      "info": {
+        "x": 11660,
+        "y": 1950,
+        "z": 201,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "A9109RhXa6",
+        "message": "2XfZMaytQ0",
+        "timeout": "zcEK0bgRty",
+        "reason": "6Z8rYReUZx"
+      },
+      "outputs": {
+        "action": []
+      },
+      "options": {}
+    },
+    {
+      "name": "create_button",
+      "info": {
+        "x": 15606,
+        "y": 5443,
+        "z": 202,
+        "color": "#5a5a5a",
+        "height": 482,
+        "width": 311
+      },
+      "inputs": {
+        "action": "2lp2638X2h",
+        "setStyle": "HPhv7HaXIW",
+        "setLabel": "aQXwNAMiDU",
+        "setEmoji": "A97WFlknhA",
+        "setURL": "uK9Bd3o4tv",
+        "setID": "JFiCMKzbI8",
+        "setDisabled": "MyoJ6eWUkb"
+      },
+      "outputs": {
+        "action": [
+          "XpFgqTBx1c"
+        ],
+        "button": [
+          "NxbX8DNMWG"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "button_style",
+      "info": {
+        "x": 15561,
+        "y": 5268,
+        "z": 203,
+        "color": "#5a5a5a",
+        "height": 146,
+        "width": 308
+      },
+      "options": {
+        "style": "green"
+      },
+      "outputs": {
+        "style": [
+          "HPhv7HaXIW"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "text_3x",
+      "info": {
+        "x": 15077,
+        "y": 5935,
+        "z": 204,
+        "color": "#5a5a5a",
+        "height": 366,
+        "width": 358
+      },
+      "options": {
+        "text1": "⏭️skip",
+        "text2": "skip",
+        "text3": ""
+      },
+      "outputs": {
+        "text1": [
+          "aQXwNAMiDU"
+        ],
+        "text2": [
+          "JFiCMKzbI8",
+          "qLgORYsEtj"
+        ],
+        "text3": []
+      },
+      "inputs": {}
+    },
+    {
+      "name": "disbutton_event",
+      "info": {
+        "x": 15048,
+        "y": 6391,
+        "z": 205,
+        "color": "#5a5a5a",
+        "height": 485,
+        "width": 480
+      },
+      "inputs": {
+        "buttonid": "qLgORYsEtj"
+      },
+      "options": {
+        "triggerfilter": "true"
+      },
+      "outputs": {
+        "action": [
+          "XSQB5hHx63"
+        ],
+        "user": [
+          "oxJpKdiBHk"
+        ],
+        "member": [],
+        "server": [
+          "tteYn7ySUQ",
+          "yHBKeLNT0x"
+        ],
+        "channel": [],
+        "message": [],
+        "button": [
+          "7IhjNfy5gr",
+          "iQcWJ4hr9C",
+          "buwxcZf9cf"
+        ],
+        "buttonid": []
+      }
+    },
+    {
+      "name": "check_if_value_exists",
+      "info": {
+        "x": 2403,
+        "y": 867,
+        "z": 206,
+        "color": "#5a5a5a",
+        "height": 205,
+        "width": 296
+      },
+      "inputs": {
+        "action": "DyLi3y3RX7",
+        "value": "KRE3KA0qs5"
+      },
+      "outputs": {
+        "action1": [
+          "GO2z8lWyoP"
+        ],
+        "action2": [
+          "EBRijU6wTs"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "get_bot_audio_info",
+      "info": {
+        "x": 1763,
+        "y": 879,
+        "z": 207,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 610
+      },
+      "inputs": {
+        "action": "prWuUmldY8",
+        "server": "jP46qbREZV"
+      },
+      "options": {
+        "audio_info": "1"
+      },
+      "outputs": {
+        "action": [
+          "DyLi3y3RX7"
+        ],
+        "result": [
+          "KRE3KA0qs5"
+        ]
+      }
+    },
+    {
+      "name": "component_thinking",
+      "info": {
+        "x": 15614,
+        "y": 6456,
+        "z": 209,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 294
+      },
+      "inputs": {
+        "action": "XSQB5hHx63",
+        "component": "7IhjNfy5gr"
+      },
+      "outputs": {
+        "action": [
+          "uL1qKsNNMu"
+        ],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "send_message_component",
+      "info": {
+        "x": 16050,
+        "y": 5421,
+        "z": 210,
+        "color": "#5a5a5a",
+        "height": 501,
+        "width": 324
+      },
+      "inputs": {
+        "action": "XpFgqTBx1c",
+        "channel": "FyscAu2jen",
+        "text": "oAuxghYvoa",
+        "embed": "2tiEXN2bIF",
+        "attachment": "TXOEhCQkQH",
+        "buttons": "NxbX8DNMWG",
+        "split_message": "EF7usOolhq"
+      },
+      "outputs": {
+        "action": [
+          "a0Lx30GZwp"
+        ],
+        "message": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "send_reply_mod",
+      "info": {
+        "x": 1567,
+        "y": 2924,
+        "z": 211,
+        "color": "#5a5a5a",
+        "height": 541,
+        "width": 539
+      },
+      "inputs": {
+        "action": "GO2z8lWyoP",
+        "message": "974lupWMcz",
+        "text1": "w1UtV7dyQw",
+        "text2": "7zyaTldLII",
+        "text3": "A1NHUhyXIK",
+        "text4": "rlgzfChTsQ",
+        "embed": "H5e9zHnN1Z",
+        "attachment": "784LH8uOtI"
+      },
+      "options": {
+        "smsg": "false",
+        "nomention": "false",
+        "text": "Der song ist nun in der queue"
+      },
+      "outputs": {
+        "action": [
+          "WnHPSir87a",
+          "Q3ivCZabE5"
+        ],
+        "message": [
+          "9h6dfB8f34"
+        ]
+      }
+    },
+    {
+      "name": "skip_audio",
+      "info": {
+        "x": 16675,
+        "y": 6467,
+        "z": 212,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 306
+      },
+      "inputs": {
+        "action": "RJDHt0MKo8",
+        "server": "tteYn7ySUQ",
+        "number_skips": "U3hZQZjtJD"
+      },
+      "outputs": {
+        "action": [
+          "ZljIIKvbf1"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 15587,
+        "y": 6929,
+        "z": 213,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "2"
+      },
+      "outputs": {
+        "number": [
+          "U3hZQZjtJD"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "check_bot_audio_size",
+      "info": {
+        "x": 16096,
+        "y": 6447,
+        "z": 214,
+        "color": "#5a5a5a",
+        "height": 257,
+        "width": 537
+      },
+      "inputs": {
+        "action": "uL1qKsNNMu",
+        "server": "yHBKeLNT0x",
+        "number": "zzcE5lGVFp"
+      },
+      "options": {
+        "comparison_type": "less_than"
+      },
+      "outputs": {
+        "action1": [
+          "MTeDYQR2Cl"
+        ],
+        "action2": [
+          "RJDHt0MKo8"
+        ],
+        "outputnumber": []
+      }
+    },
+    {
+      "name": "number",
+      "info": {
+        "x": 15619,
+        "y": 6698,
+        "z": 215,
+        "color": "#5a5a5a",
+        "height": 155,
+        "width": 374
+      },
+      "options": {
+        "number": "2"
+      },
+      "outputs": {
+        "number": [
+          "zzcE5lGVFp"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 19844,
+        "y": 6481,
+        "z": 217,
+        "color": "#5a5a5a",
+        "height": 402,
+        "width": 363
+      },
+      "inputs": {
+        "action": "YpbOBsCGOH",
+        "message_text": "d0c0PgTGNT",
+        "message_embed": "Y5AlpwuqOa",
+        "components": "VHrR6eNBki",
+        "component": "iQcWJ4hr9C"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 18685,
+        "y": 6088,
+        "z": 218,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "✅Erfolgreich song geskippt"
+      },
+      "outputs": {
+        "text": [
+          "d0c0PgTGNT"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "edit_thinking_component",
+      "info": {
+        "x": 16269,
+        "y": 6762,
+        "z": 219,
+        "color": "#5a5a5a",
+        "height": 402,
+        "width": 362
+      },
+      "inputs": {
+        "action": "MTeDYQR2Cl",
+        "message_text": "unNiYgqaIn",
+        "message_embed": "iRBRyz3lsg",
+        "components": "GKlh54Upr6",
+        "component": "buwxcZf9cf"
+      },
+      "outputs": {
+        "action": [],
+        "error": []
+      },
+      "options": {}
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 15880,
+        "y": 7203,
+        "z": 220,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "In der queue gib es nichts zu Skippen!"
+      },
+      "outputs": {
+        "text": [
+          "unNiYgqaIn"
+        ]
+      },
+      "inputs": {}
+    },
+    {
+      "name": "play_music",
+      "info": {
+        "x": 2147,
+        "y": 2926,
+        "z": 221,
+        "color": "#5a5a5a",
+        "height": 501,
+        "width": 610
+      },
+      "inputs": {
+        "action": "WnHPSir87a",
+        "server": "yWP4qOfl9k",
+        "url": "Q5ShmgCE5R",
+        "seek": "zj6o3bosNq",
+        "volume": "aNK3NKHEz4",
+        "bitrate": "qagMChr8fq",
+        "custom_position": "fBYGJrNJDd"
+      },
+      "options": {
+        "audio_behavior_type": "add_last",
+        "audio_quality_type": "highestaudio"
+      },
+      "outputs": {
+        "action": [
+          "ccDLMYI28X"
+        ],
+        "id": [],
+        "url": [
+          "wPEbfuM317",
+          "Y46TRXFawM",
+          "ArMGxivGel",
+          "i1P3r0sTu6",
+          "7vMkcJDgZf"
+        ]
+      }
+    },
+    {
+      "name": "multi_embed_tool",
+      "info": {
+        "x": 17851,
+        "y": 6255,
+        "z": 222,
+        "color": "#5a5a5a",
+        "height": 1025,
+        "width": 725
+      },
+      "inputs": {
+        "action": "DRE0RngusD",
+        "text1": "F81GfTJVIg",
+        "text2": "Cqy1fHhUtk",
+        "text3": "rNR99LIjre",
+        "text4": "yz05DqtrN1",
+        "text5": "EbwUGptuVV",
+        "text6": "0cJjixEVG5"
+      },
+      "options": {
+        "color": "#ff00ff",
+        "mergedtext1": "",
+        "mergedtext2": "",
+        "mergedtext3": "",
+        "mergedtext4": "",
+        "mergedtext5": "💿Grade Spielt",
+        "mergedtext6": "",
+        "mergedtext7": "📃Song:\n${text2}\n\n⏲️Dauer:\n${text3}\n\n👀Views:\n${text4}\n\n🧑Author:\n${text5}\n\n🔊Lautstärke:\n`${text6}%`",
+        "mergedtext8": "${text1}",
+        "mergedtext9": "",
+        "mergedtext10": "",
+        "boolean_type": "true"
+      },
+      "outputs": {
+        "action": [
+          "KRSNbxH9vh"
+        ],
+        "color": [
+          "qKTT3DFw8n"
+        ],
+        "mergedtext1": [],
+        "mergedtext2": [],
+        "mergedtext3": [],
+        "mergedtext4": [],
+        "mergedtext5": [
+          "ISJd1wbtnY"
+        ],
+        "mergedtext6": [],
+        "mergedtext7": [
+          "5kei1BiEw6"
+        ],
+        "mergedtext8": [
+          "I538umKJUk"
+        ],
+        "mergedtext9": [],
+        "mergedtext10": [],
+        "boolean": []
+      }
+    },
+    {
+      "name": "get_user_info_x3",
+      "info": {
+        "x": 17098,
+        "y": 6736,
+        "z": 223,
+        "color": "#5a5a5a",
+        "height": 300,
+        "width": 615
+      },
+      "inputs": {
+        "action": "ZljIIKvbf1",
+        "user": "oxJpKdiBHk"
+      },
+      "options": {
+        "user_info1": "2",
+        "user_info2": "15",
+        "user_info3": "1"
+      },
+      "outputs": {
+        "action": [
+          "DRE0RngusD"
+        ],
+        "result1": [
+          "dRT3vZJ6IR"
+        ],
+        "result2": [
+          "76kkLtfsUQ"
+        ],
+        "result3": []
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 2993,
+        "y": 2955,
+        "z": 224,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "ccDLMYI28X",
+        "search_value": "wPEbfuM317",
+        "result_number": "H9aG0oIOVe"
+      },
+      "options": {
+        "video_info": "1"
+      },
+      "outputs": {
+        "action": [
+          "uzeQx8DLjP"
+        ],
+        "result": [
+          "Cqy1fHhUtk"
+        ]
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3003,
+        "y": 3260,
+        "z": 225,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "uzeQx8DLjP",
+        "search_value": "Y46TRXFawM",
+        "result_number": "xOF8EguP8y"
+      },
+      "options": {
+        "video_info": "6"
+      },
+      "outputs": {
+        "action": [
+          "rjK5AIgDiD"
+        ],
+        "result": [
+          "F81GfTJVIg"
+        ]
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3000,
+        "y": 3553,
+        "z": 226,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "rjK5AIgDiD",
+        "search_value": "ArMGxivGel",
+        "result_number": "zZ6P86OMBi"
+      },
+      "options": {
+        "video_info": "3"
+      },
+      "outputs": {
+        "action": [
+          "MZzTM3jvtW"
+        ],
+        "result": [
+          "rNR99LIjre"
+        ]
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3004,
+        "y": 3845,
+        "z": 227,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "MZzTM3jvtW",
+        "search_value": "i1P3r0sTu6",
+        "result_number": "fMK1ivugHF"
+      },
+      "options": {
+        "video_info": "5"
+      },
+      "outputs": {
+        "action": [
+          "xg9GCXg2t6"
+        ],
+        "result": []
+      }
+    },
+    {
+      "name": "get_youtube_video_info",
+      "info": {
+        "x": 3014,
+        "y": 4135,
+        "z": 228,
+        "color": "#5a5a5a",
+        "height": 265,
+        "width": 604
+      },
+      "inputs": {
+        "action": "xg9GCXg2t6",
+        "search_value": "7vMkcJDgZf",
+        "result_number": "0unRzp2sbD"
+      },
+      "options": {
+        "video_info": "9"
+      },
+      "outputs": {
+        "action": [
+          "o8KDOijoYr"
+        ],
+        "result": [
+          "EbwUGptuVV"
+        ]
+      }
+    },
+    {
+      "name": "get_volume",
+      "info": {
+        "x": 3076,
+        "y": 4430,
+        "z": 229,
+        "color": "#5a5a5a",
+        "height": 187,
+        "width": 262
+      },
+      "inputs": {
+        "action": "o8KDOijoYr",
+        "server": "O78GB2OuHo"
+      },
+      "outputs": {
+        "action": [],
+        "result": [
+          "0cJjixEVG5"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "edit_embed_message",
+      "info": {
+        "x": 18717,
+        "y": 6368,
+        "z": 233,
+        "color": "#5a5a5a",
+        "height": 990,
+        "width": 350
+      },
+      "inputs": {
+        "action": "KRSNbxH9vh",
+        "message_embed": "yootTLuPgM",
+        "color": "qKTT3DFw8n",
+        "thumbnail": "IxKuZVsG1W",
+        "author_icon": "dRT3vZJ6IR",
+        "author_name": "76kkLtfsUQ",
+        "author_url": "ir60oQ8J88",
+        "title": "ISJd1wbtnY",
+        "url": "tmNupc6GZF",
+        "description": "5kei1BiEw6",
+        "image": "I538umKJUk",
+        "footer_icon": "DrgQKoL4U9",
+        "footer_text": "VcKfGnGtvh",
+        "timestamp": "b65zzQBtMo"
+      },
+      "outputs": {
+        "action": [
+          "I0AvF0dbfn"
+        ],
+        "message_embed": [
+          "gQdTYgfjMP"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "edit_message",
+      "info": {
+        "x": 19322,
+        "y": 6678,
+        "z": 234,
+        "color": "#5a5a5a",
+        "height": 324,
+        "width": 306
+      },
+      "inputs": {
+        "action": "I0AvF0dbfn",
+        "message": "3OWkdU2f9S",
+        "message_text": "a3eKNeoNnK",
+        "message_embed": "gQdTYgfjMP"
+      },
+      "outputs": {
+        "action": [
+          "YpbOBsCGOH"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "wait",
+      "info": {
+        "x": 1333,
+        "y": 3656,
+        "z": 235,
+        "color": "#5a5a5a",
+        "height": 113,
+        "width": 350
+      },
+      "inputs": {
+        "action": "Q3ivCZabE5",
+        "time": "ibQHsUOW9O"
+      },
+      "options": {
+        "time_type": "seconds"
+      },
+      "outputs": {
+        "action": [
+          "fO4SF7vAEU"
+        ]
+      }
+    },
+    {
+      "name": "delete_message",
+      "info": {
+        "x": 1883,
+        "y": 3692,
+        "z": 236,
+        "color": "#5a5a5a",
+        "height": 196,
+        "width": 276
+      },
+      "inputs": {
+        "action": "fO4SF7vAEU",
+        "message": "9h6dfB8f34",
+        "timeout": "Y2wcJxMz7Y",
+        "reason": "SpH9CUb70l"
+      },
+      "outputs": {
+        "action": [
+          "qPKrTvlGgi"
+        ]
+      },
+      "options": {}
+    },
+    {
+      "name": "delete_message",
+      "info": {
+        "x": 1892,
+        "y": 1560,
+        "z": 237,
+        "color": "#5a5a5a",
+        "height": 196,
+        "width": 276
+      },
+      "inputs": {
+        "action": "qPKrTvlGgi",
+        "message": "doa8exZWCh",
+        "timeout": "NUWFm0ctYL",
+        "reason": "KlBmZGz5Q6"
+      },
+      "outputs": {
+        "action": []
+      },
+      "options": {}
+    }
+  ],
+  "notes": [
+    {
+      "title": "Pause",
+      "description": "",
+      "color": "#f58700",
+      "x": 4596,
+      "y": 3675,
+      "z": 1,
+      "width": 2975,
+      "height": 1069
+    },
+    {
+      "title": "🔉",
+      "description": "",
+      "color": "#cc0070",
+      "x": 5854,
+      "y": 2400,
+      "z": 2,
+      "width": 6623,
+      "height": 1066
+    },
+    {
+      "title": "Button styles",
+      "description": "",
+      "color": "#f5cb0f",
+      "x": 6077,
+      "y": 923,
+      "z": 3,
+      "width": 2094,
+      "height": 356
+    },
+    {
+      "title": "Button pure sequence",
+      "description": "",
+      "color": "#f60e0e",
+      "x": 8829,
+      "y": 883,
+      "z": 4,
+      "width": 399,
+      "height": 789
+    },
+    {
+      "title": "volume up",
+      "description": "",
+      "color": "#4cb8c2",
+      "x": 5588,
+      "y": 0,
+      "z": 5,
+      "width": 5524,
+      "height": 790
+    },
+    {
+      "title": "Buttons id´s and Label´s",
+      "description": "",
+      "color": "#07565f",
+      "x": 9438,
+      "y": 889,
+      "z": 6,
+      "width": 1259,
+      "height": 1014
+    },
+    {
+      "title": "Leave ",
+      "description": "Bot end the song and leave the voice channel",
+      "color": "#ff0000",
+      "x": 12496,
+      "y": 103,
+      "z": 7,
+      "width": 2861,
+      "height": 581
+    },
+    {
+      "title": "Send embed and buttons DONT  TOUCH",
+      "description": "",
+      "color": "#b0a311",
+      "x": 11098,
+      "y": 1691,
+      "z": 8,
+      "width": 465,
+      "height": 587
+    },
+    {
+      "title": "Resume button",
+      "description": "",
+      "color": "#ca1264",
+      "x": 11261,
+      "y": 751,
+      "z": 9,
+      "width": 3027,
+      "height": 930
+    },
+    {
+      "title": "Create the buttons!",
+      "description": "",
+      "color": "#0c27d4",
+      "x": 6008,
+      "y": 1283,
+      "z": 10,
+      "width": 2165,
+      "height": 551
+    },
+    {
+      "title": "New Note",
+      "description": "",
+      "color": "#5a5a5a",
+      "x": 36,
+      "y": 27,
+      "z": 11,
+      "width": 613,
+      "height": 583
+    },
+    {
+      "title": "The command",
+      "description": "",
+      "color": "#5a5a5a",
+      "x": 0,
+      "y": 0,
+      "z": 12,
+      "width": 818,
+      "height": 656
+    },
+    {
+      "title": "Get the songs info",
+      "description": "",
+      "color": "#225558",
+      "x": 3149,
+      "y": 127,
+      "z": 13,
+      "width": 687,
+      "height": 1648
+    },
+    {
+      "title": "Create song info´s embed",
+      "description": "",
+      "color": "#35c41c",
+      "x": 3876,
+      "y": 171,
+      "z": 14,
+      "width": 962,
+      "height": 1376
+    },
+    {
+      "title": "Bot join in your voice channel",
+      "description": "",
+      "color": "#a84300",
+      "x": 1466,
+      "y": 236,
+      "z": 15,
+      "width": 403,
+      "height": 252
+    },
+    {
+      "title": "Delete message",
+      "description": "",
+      "color": "#ff0000",
+      "x": 855,
+      "y": 1640,
+      "z": 16,
+      "width": 485,
+      "height": 1184
+    },
+    {
+      "title": "Wait times to delete",
+      "description": "",
+      "color": "#ff0000",
+      "x": 1581,
+      "y": 2361,
+      "z": 17,
+      "width": 491,
+      "height": 468
+    },
+    {
+      "title": "Max volume",
+      "description": "",
+      "color": "#0f5bcc",
+      "x": 8230,
+      "y": 911,
+      "z": 18,
+      "width": 538,
+      "height": 998
+    },
+    {
+      "title": "The button list DONT TOUCH",
+      "description": "",
+      "color": "#f71818",
+      "x": 7936,
+      "y": 1940,
+      "z": 19,
+      "width": 3188,
+      "height": 431
+    },
+    {
+      "title": "number to wait",
+      "description": "",
+      "color": "#64b465",
+      "x": 2350,
+      "y": 5690,
+      "z": 20,
+      "width": 409,
+      "height": 297
+    },
+    {
+      "title": "Changing Status",
+      "description": "",
+      "color": "#19c87f",
+      "x": 0,
+      "y": 5380,
+      "z": 21,
+      "width": 2292,
+      "height": 938
+    },
+    {
+      "title": "queue command",
+      "description": "",
+      "color": "#9f3296",
+      "x": 8490,
+      "y": 3566,
+      "z": 22,
+      "width": 6929,
+      "height": 2356
+    },
+    {
+      "title": "Discord button Event ",
+      "description": "You can also replace the block with Button Event",
+      "color": "#5a5a5a",
+      "x": 15035,
+      "y": 6315,
+      "z": 23,
+      "width": 512,
+      "height": 567
+    },
+    {
+      "title": "In queue",
+      "description": "",
+      "color": "#5a5a5a",
+      "x": 1549,
+      "y": 2872,
+      "z": 24,
+      "width": 1222,
+      "height": 606
+    },
+    {
+      "title": "Get youtube infos",
+      "description": "",
+      "color": "#0d5977",
+      "x": 2848,
+      "y": 2884,
+      "z": 25,
+      "width": 787,
+      "height": 1747
+    }
+  ]
+}

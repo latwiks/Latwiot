@@ -1,0 +1,558 @@
+{
+  "info": {
+    "title": "🎸 [Music] play",
+    "description": "",
+    "thumbnail": "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+  },
+  "blocks": [
+    {
+      "name": "command_event_with_text",
+      "info": {
+        "x": 149,
+        "y": 220,
+        "z": 1,
+        "color": "#5a5a5a",
+        "height": 585,
+        "width": 774
+      },
+      "inputs": {
+        "command_slowmode": "h49sMzsWuK"
+      },
+      "options": {
+        "command_name": "play",
+        "custom_prefix": "",
+        "command_restriction": "none",
+        "required_member_permission": "none",
+        "case_sensitive": "no",
+        "command_slowmode_restriction": "none"
+      },
+      "outputs": {
+        "action1": [
+          "vczBlFmVgb"
+        ],
+        "action2": [],
+        "message": [
+          "fgebn6F0fK"
+        ],
+        "server": [
+          "TEoprHbSho"
+        ],
+        "channel": [
+          "WjBdLgdPKQ",
+          "3nwkqPYpO0",
+          "x4iDk9j3gm",
+          "2LvtxAUvFx"
+        ],
+        "vc": [
+          "jrBHGm1inC",
+          "0yY5o1DuKu"
+        ],
+        "user": [],
+        "member": [],
+        "error_message": []
+      }
+    },
+    {
+      "name": "play_music",
+      "info": {
+        "x": 2415,
+        "y": 209,
+        "z": 2,
+        "color": "#5a5a5a",
+        "height": 501,
+        "width": 654
+      },
+      "inputs": {
+        "action": "IDaS7p4BgI",
+        "server": "TEoprHbSho",
+        "url": "FZKUkvwx8I",
+        "seek": "qWc0oJDXxj",
+        "volume": "yD9j7WMi89",
+        "bitrate": "hJ3LYCE6Ij",
+        "custom_position": "ONJnaultNc"
+      },
+      "options": {
+        "audio_behavior_type": "add_last",
+        "audio_quality_type": "highestaudio"
+      },
+      "outputs": {
+        "action": [
+          "k4EpUAaQM1"
+        ],
+        "id": [
+          "RZoXvtpZh8",
+          "TUcKnzwP2i"
+        ],
+        "url": [
+          "1pHD0vrlsG",
+          "zOZHNDAvCU",
+          "RfgX2Pixxe"
+        ]
+      }
+    },
+    {
+      "name": "join_voice_channel",
+      "info": {
+        "x": 1369,
+        "y": 213,
+        "z": 3,
+        "color": "#5a5a5a",
+        "height": 206,
+        "width": 350
+      },
+      "inputs": {
+        "action": "5JEMEchqNX",
+        "voice_channel": "jrBHGm1inC"
+      },
+      "outputs": {
+        "action": [
+          "BAJSTFO0SB"
+        ],
+        "voice_connection": []
+      }
+    },
+    {
+      "name": "check_if_value_exists",
+      "info": {
+        "x": 1011,
+        "y": 212,
+        "z": 6,
+        "color": "#5a5a5a",
+        "height": 205,
+        "width": 296
+      },
+      "inputs": {
+        "action": "vczBlFmVgb",
+        "value": "0yY5o1DuKu"
+      },
+      "outputs": {
+        "action1": [
+          "5JEMEchqNX"
+        ],
+        "action2": [
+          "Ph8T92rP5o"
+        ]
+      }
+    },
+    {
+      "name": "send_message",
+      "info": {
+        "x": 1370,
+        "y": 675,
+        "z": 7,
+        "color": "#5a5a5a",
+        "height": 442,
+        "width": 324
+      },
+      "inputs": {
+        "action": "Ph8T92rP5o",
+        "channel": "WjBdLgdPKQ",
+        "text": "GTurMG0FzB",
+        "embed": "WaKkWArpsV",
+        "attachment": "HwavQSSu7G",
+        "split_message": "R92SSBLH86"
+      },
+      "outputs": {
+        "action": [],
+        "message": []
+      }
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 921,
+        "y": 941,
+        "z": 8,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "``⚠️ Join the voice channel``"
+      },
+      "outputs": {
+        "text": [
+          "GTurMG0FzB"
+        ]
+      }
+    },
+    {
+      "name": "get_message_arguments",
+      "info": {
+        "x": 1792,
+        "y": 211,
+        "z": 9,
+        "color": "#5a5a5a",
+        "height": 362,
+        "width": 496
+      },
+      "inputs": {
+        "action": "BAJSTFO0SB",
+        "message": "fgebn6F0fK",
+        "argument_number": "kZwLfEEOkh",
+        "custom_argument_separator": "oFfxOHQQdc"
+      },
+      "options": {
+        "argument_type": "multiple_arguments"
+      },
+      "outputs": {
+        "action": [
+          "IDaS7p4BgI"
+        ],
+        "result": [
+          "FZKUkvwx8I"
+        ]
+      }
+    },
+    {
+      "name": "send_message",
+      "info": {
+        "x": 4766,
+        "y": 2150,
+        "z": 14,
+        "color": "#5a5a5a",
+        "height": 442,
+        "width": 324
+      },
+      "inputs": {
+        "action": "oSvGXffWfY",
+        "channel": "3nwkqPYpO0",
+        "text": "rhRlpO5puu",
+        "embed": "o07BZr2PwK",
+        "attachment": "TIbLWn6sx5",
+        "split_message": "wAHqW7GdAN"
+      },
+      "outputs": {
+        "action": [],
+        "message": []
+      }
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 2718,
+        "y": 736,
+        "z": 16,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "playlist"
+      },
+      "outputs": {
+        "text": [
+          "ccXiZGRYfA"
+        ]
+      }
+    },
+    {
+      "name": "check_comparison",
+      "info": {
+        "x": 3490,
+        "y": 463,
+        "z": 17,
+        "color": "#5a5a5a",
+        "height": 257,
+        "width": 528
+      },
+      "inputs": {
+        "action": "k4EpUAaQM1",
+        "value1": "RZoXvtpZh8",
+        "value2": "ccXiZGRYfA"
+      },
+      "options": {
+        "comparison_type": "includes"
+      },
+      "outputs": {
+        "action1": [
+          "LymwLLdkkD"
+        ],
+        "action2": [
+          "dMKUQRgUth"
+        ],
+        "boolean": []
+      }
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 3731,
+        "y": 1774,
+        "z": 19,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "Playlist added in the queue"
+      },
+      "outputs": {
+        "text": [
+          "xN4YCRaZD5"
+        ]
+      }
+    },
+    {
+      "name": "create_embed_message",
+      "info": {
+        "x": 4152,
+        "y": 1432,
+        "z": 20,
+        "color": "#5a5a5a",
+        "height": 912,
+        "width": 350
+      },
+      "inputs": {
+        "action": "LymwLLdkkD",
+        "color": "MWMZ0T3Xr3",
+        "thumbnail": "7xf7JtX8oy",
+        "author_icon": "QB3xWAPGr7",
+        "author_name": "CpU9Cjq0zG",
+        "author_url": "gNoEDmZ7UK",
+        "title": "xN4YCRaZD5",
+        "url": "X7LLZv25Yb",
+        "description": "cvqHHo71Y6",
+        "image": "5FDgVoJpE0",
+        "footer_icon": "dh36cArgrV",
+        "footer_text": "pjw9UdTDzx",
+        "timestamp": "KF5y4Muddr"
+      },
+      "outputs": {
+        "action": [
+          "oSvGXffWfY"
+        ],
+        "message_embed": [
+          "o07BZr2PwK"
+        ]
+      }
+    },
+    {
+      "name": "create_embed_message",
+      "info": {
+        "x": 5622,
+        "y": 180,
+        "z": 23,
+        "color": "#5a5a5a",
+        "height": 912,
+        "width": 350
+      },
+      "inputs": {
+        "action": "4VWDbqrEij",
+        "color": "LfDfaRtz0S",
+        "thumbnail": "C8BoKMG1nx",
+        "author_icon": "T4UxLPjSWr",
+        "author_name": "TreDZzVTFG",
+        "author_url": "FolCZ6DAEB",
+        "title": "plh2jOQ9xA",
+        "url": "oslE8w3n0X",
+        "description": "4ndMarR6JK",
+        "image": "HrgGH0oT5q",
+        "footer_icon": "5EnbzupeVZ",
+        "footer_text": "y9C6F2k783",
+        "timestamp": "zhrKDWbCaq"
+      },
+      "outputs": {
+        "action": [
+          "D8a9LyC6fk"
+        ],
+        "message_embed": [
+          "xtS28N1KNf"
+        ]
+      }
+    },
+    {
+      "name": "send_message",
+      "info": {
+        "x": 6090,
+        "y": 649,
+        "z": 24,
+        "color": "#5a5a5a",
+        "height": 442,
+        "width": 324
+      },
+      "inputs": {
+        "action": "D8a9LyC6fk",
+        "channel": "x4iDk9j3gm",
+        "text": "QCVqY9uRVH",
+        "embed": "xtS28N1KNf",
+        "attachment": "y6E7IgqNyP",
+        "split_message": "2rg1BlUYNT"
+      },
+      "outputs": {
+        "action": [],
+        "message": []
+      }
+    },
+    {
+      "name": "get_youtube_v2",
+      "info": {
+        "x": 5181,
+        "y": 185,
+        "z": 25,
+        "color": "#5a5a5a",
+        "height": 553,
+        "width": 344
+      },
+      "inputs": {
+        "action": "qTuSzppdZQ",
+        "search_value": "1pHD0vrlsG"
+      },
+      "outputs": {
+        "action": [
+          "4VWDbqrEij"
+        ],
+        "title": [
+          "plh2jOQ9xA"
+        ],
+        "description": [],
+        "duration": [],
+        "thumbnail": [
+          "C8BoKMG1nx"
+        ],
+        "url": [
+          "oslE8w3n0X"
+        ],
+        "channel": [
+          "4ndMarR6JK"
+        ],
+        "channelurl": [],
+        "value": []
+      }
+    },
+    {
+      "name": "check_comparisonv3",
+      "info": {
+        "x": 4291,
+        "y": 480,
+        "z": 26,
+        "color": "#5a5a5a",
+        "height": 257,
+        "width": 528
+      },
+      "inputs": {
+        "action": "dMKUQRgUth",
+        "value1": "TUcKnzwP2i",
+        "value2": "Kt1QigMKmg"
+      },
+      "options": {
+        "comparison_type": "includes"
+      },
+      "outputs": {
+        "action1": [
+          "7wiAanvpeb"
+        ],
+        "action2": [
+          "qTuSzppdZQ"
+        ],
+        "boolean": []
+      }
+    },
+    {
+      "name": "text",
+      "info": {
+        "x": 3669,
+        "y": 748,
+        "z": 27,
+        "color": "#5a5a5a",
+        "height": 168,
+        "width": 345
+      },
+      "options": {
+        "text": "soundcloud"
+      },
+      "outputs": {
+        "text": [
+          "Kt1QigMKmg"
+        ]
+      }
+    },
+    {
+      "name": "get_soundcloud_info",
+      "info": {
+        "x": 5183,
+        "y": 1332,
+        "z": 28,
+        "color": "#5a5a5a",
+        "height": 277,
+        "width": 288
+      },
+      "inputs": {
+        "action": "7wiAanvpeb",
+        "url": "zOZHNDAvCU"
+      },
+      "outputs": {
+        "action": [
+          "v8I3MUpZt5"
+        ],
+        "title": [
+          "QwcoVfDkb2"
+        ],
+        "artist": [
+          "ocPGCPE7cf"
+        ],
+        "image": [
+          "l5G3OWgqzi"
+        ]
+      }
+    },
+    {
+      "name": "create_embed_message",
+      "info": {
+        "x": 5613,
+        "y": 1330,
+        "z": 29,
+        "color": "#5a5a5a",
+        "height": 912,
+        "width": 350
+      },
+      "inputs": {
+        "action": "v8I3MUpZt5",
+        "color": "PBcrlQkAaX",
+        "thumbnail": "l5G3OWgqzi",
+        "author_icon": "OJNgUE1ns4",
+        "author_name": "deiL6BrA9V",
+        "author_url": "DhVC3gd6Vk",
+        "title": "QwcoVfDkb2",
+        "url": "RfgX2Pixxe",
+        "description": "ocPGCPE7cf",
+        "image": "V1krQeQGKB",
+        "footer_icon": "ChQ90NdE1e",
+        "footer_text": "Aj3FFFoCwF",
+        "timestamp": "3spwF9kDrY"
+      },
+      "outputs": {
+        "action": [
+          "dZlUbPUHeR"
+        ],
+        "message_embed": [
+          "phad5JY3iO"
+        ]
+      }
+    },
+    {
+      "name": "send_message",
+      "info": {
+        "x": 6092,
+        "y": 1792,
+        "z": 30,
+        "color": "#5a5a5a",
+        "height": 442,
+        "width": 324
+      },
+      "inputs": {
+        "action": "dZlUbPUHeR",
+        "channel": "2LvtxAUvFx",
+        "text": "rbyIfp1F6n",
+        "embed": "phad5JY3iO",
+        "attachment": "FcBPSg99mT",
+        "split_message": "TMmrNkkziz"
+      },
+      "outputs": {
+        "action": [],
+        "message": []
+      }
+    }
+  ],
+  "notes": []
+}

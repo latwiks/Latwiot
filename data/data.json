@@ -1,0 +1,176 @@
+{
+    "dbb": {
+        "prefixes": {
+            "main": "!",
+            "servers": {}
+        },
+        "owners": [
+            "697393801890758747"
+        ]
+    },
+    "discord": {
+        "servers": {
+            "877934117239537694": {
+                "volume": 31,
+                "musicid": "1054838136770928700",
+                "musicmessage": {
+                    "channelID": "1054838136770928700",
+                    "deleted": false,
+                    "id": "1054838138356371478",
+                    "type": "DEFAULT",
+                    "system": false,
+                    "content": "",
+                    "authorID": "1045375817238196334",
+                    "pinned": false,
+                    "tts": false,
+                    "nonce": null,
+                    "embeds": [
+                        {
+                            "type": "rich",
+                            "title": "Music Controls",
+                            "description": "**You do NOT need to use any commands or a prefix to search for a song, just simply type the name of the song (Add the artist for more accurate results) or enter the URL of your desired music video, Youtube or Spotify playlist :)\n----------------------------------------------------------------------------------\nVolume: 30**",
+                            "url": null,
+                            "color": 5793266,
+                            "timestamp": null,
+                            "fields": [],
+                            "thumbnail": null,
+                            "image": null,
+                            "video": null,
+                            "author": null,
+                            "provider": null,
+                            "footer": null,
+                            "files": []
+                        }
+                    ],
+                    "attachments": [],
+                    "createdTimestamp": 1671563410129,
+                    "editedTimestamp": 0,
+                    "webhookID": null,
+                    "applicationID": null,
+                    "activity": null,
+                    "flags": 0,
+                    "reference": null,
+                    "components": [
+                        {
+                            "components": [
+                                {
+                                    "type": 2,
+                                    "style": 2,
+                                    "label": "Пуск/пауза",
+                                    "disabled": false,
+                                    "custom_id": "pauseplay"
+                                },
+                                {
+                                    "type": 2,
+                                    "style": 2,
+                                    "label": "Пропустить",
+                                    "disabled": false,
+                                    "custom_id": "skip"
+                                },
+                                {
+                                    "type": 2,
+                                    "style": 2,
+                                    "label": "Остановить",
+                                    "disabled": false,
+                                    "custom_id": "stop"
+                                },
+                                {
+                                    "type": 2,
+                                    "style": 2,
+                                    "label": "Очередь",
+                                    "disabled": false,
+                                    "custom_id": "queue"
+                                },
+                                {
+                                    "type": 2,
+                                    "style": 2,
+                                    "label": "Радио",
+                                    "disabled": false,
+                                    "custom_id": "radio"
+                                }
+                            ],
+                            "type": "ACTION_ROW"
+                        }
+                    ],
+                    "guildID": "877934117239537694",
+                    "cleanContent": ""
+                },
+                "musicembed": {
+                    "title": "Music Controls",
+                    "type": "rich",
+                    "description": "**You do NOT need to use any commands or a prefix to search for a song, just simply type the name of the song (Add the artist for more accurate results) or enter the URL of your desired music video, Youtube or Spotify playlist :)\n----------------------------------------------------------------------------------\nVolume: 30**",
+                    "url": null,
+                    "timestamp": null,
+                    "color": 5793266,
+                    "fields": [],
+                    "thumbnail": null,
+                    "image": null,
+                    "author": null,
+                    "footer": null
+                },
+                "musicbuttons": {
+                    "components": [
+                        {
+                            "type": 2,
+                            "style": 2,
+                            "label": "Пуск/пауза",
+                            "emoji": {
+                                "name": "⏯️"
+                            },
+                            "disabled": false,
+                            "custom_id": "pauseplay"
+                        },
+                        {
+                            "type": 2,
+                            "style": 2,
+                            "label": "Пропустить",
+                            "emoji": {
+                                "name": "⏭️"
+                            },
+                            "disabled": false,
+                            "custom_id": "skip"
+                        },
+                        {
+                            "type": 2,
+                            "style": 2,
+                            "label": "Остановить",
+                            "emoji": {
+                                "name": "⏏️"
+                            },
+                            "disabled": false,
+                            "custom_id": "stop"
+                        },
+                        {
+                            "type": 2,
+                            "style": 2,
+                            "label": "Очередь",
+                            "emoji": {
+                                "name": "🇶"
+                            },
+                            "disabled": false,
+                            "custom_id": "queue"
+                        },
+                        {
+                            "type": 2,
+                            "style": 2,
+                            "label": "Радио",
+                            "emoji": {
+                                "name": "📻"
+                            },
+                            "disabled": false,
+                            "custom_id": "radio"
+                        }
+                    ],
+                    "type": "ACTION_ROW"
+                }
+            },
+            "889772130626076672": {
+                "volume": null
+            }
+        },
+        "members": {},
+        "users": {}
+    },
+    "blocks": {},
+    "custom": {}
+}
